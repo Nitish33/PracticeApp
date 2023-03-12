@@ -7,24 +7,30 @@ import Styles from './styles';
 import Animated, {
   useAnimatedStyle,
   useSharedValue,
+  withSpring,
 } from 'react-native-reanimated';
 
 export default function DragAndDrop() {
-  const start = useSharedValue({x: 0, y: 0});
   const offset = useSharedValue({x: 0, y: 0});
+
+  const offsetX = useSharedValue(0);
+  const offsetY = useSharedValue(0);
 
   const gesture = Gesture.Pan()
     .onUpdate(event => {
       offset.value = {
-        x: start.value.x + event.translationX,
-        y: start.value.y + event.translationY,
+        x: event.translationX,
+        y: event.translationY,
       };
+
+      offsetX.value = event.translationX;
+      offsetY.value = event.translationY;
     })
     .onEnd(() => {
-      start.value = {
-        x: offset.value.x,
-        y: offset.value.y,
-      };
+      offsetX.value = withSpring(0);
+      offsetY.value = withSpring(0);
+
+      offset.value = {x: 0, y: 0};
     });
 
   const boxAnimatedStyle = useAnimatedStyle(() => {
@@ -33,7 +39,7 @@ export default function DragAndDrop() {
       height: 100,
       borderRadius: 100,
       backgroundColor: 'red',
-      transform: [{translateX: offset.value.x}, {translateY: offset.value.y}],
+      transform: [{translateX: offsetX.value}, {translateY: offsetY.value}],
     };
   }, []);
 

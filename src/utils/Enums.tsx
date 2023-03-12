@@ -3,5 +3,7 @@ export enum ScreenName {
 
   //   Gesture handler examples
   GHDragAndDrop = 'GHDragAndDrop',
+  GHDragAndPress = 'GHDragAndPress',
+  GHSimultaneous = 'GHSimultaneous',
   GHZoom = 'GHZoom',
 }
