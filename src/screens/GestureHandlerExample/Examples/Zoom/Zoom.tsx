@@ -1,10 +1,10 @@
 import {View, Text} from 'react-native';
 import React from 'react';
 
-export default function TouchExample() {
+export default function Zoom() {
   return (
     <View>
-      <Text>TouchExample</Text>
+      <Text>Zoom</Text>
     </View>
   );
 }
