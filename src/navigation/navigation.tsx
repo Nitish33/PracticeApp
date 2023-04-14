@@ -2,20 +2,37 @@ import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
-import Listing from '../screens/Listing/Listing';
-import GestureHandlerExample from '../screens/GestureHandlerExample/routes';
+import Listing, {ExampleList} from '../screens/Listing/Listing';
+import {OptionType} from '../interfaces/Options';
 
 const MainStackNavigator = createNativeStackNavigator();
+
+// {ExamplesList.map((option: OptionType) => {
+//     return (
+//       <Stack.Screen
+//         key={option.key}
+//         name={option.key}
+//         component={option.component}
+//         options={{title: option.label}}
+//       />
+//     );
+//   })}
 
 const MainStack = () => {
   return (
     <MainStackNavigator.Navigator screenOptions={{headerShown: false}}>
       <MainStackNavigator.Screen name="Listing" component={Listing} />
 
-      <MainStackNavigator.Screen
-        name="GestureHandler"
-        component={GestureHandlerExample}
-      />
+      {ExampleList.map((option: OptionType) => {
+        return (
+          <MainStackNavigator.Screen
+            key={option.key}
+            name={option.key}
+            component={option.component}
+            options={{title: option.label}}
+          />
+        );
+      })}
     </MainStackNavigator.Navigator>
   );
 };

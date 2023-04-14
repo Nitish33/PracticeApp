@@ -6,4 +6,13 @@ export enum ScreenName {
   GHDragAndPress = 'GHDragAndPress',
   GHSimultaneous = 'GHSimultaneous',
   GHZoom = 'GHZoom',
+
+  // React Native example
+  ReactNativeExample = 'ReactNativeExample',
+  RNGap = 'RNGap',
+  RNScrollView = 'RNScrollView',
+
+  // Carousal
+  RNCarousal = 'RNCarousal',
+  CLParallesx = 'CLParallesx',
 }
