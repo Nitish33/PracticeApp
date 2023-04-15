@@ -8,6 +8,7 @@ const IronMan = require('./ironman.jpg');
 const MoonNight = require('./moon_knight.jpg');
 const ShangChi = require('./shang_chi.jpg');
 const Spiderman = require('./spiderman.jpg');
+const BlackPantherGreyScale = require('./black_panther_grey_scale.jpeg');
 
 const Images = {
   BlackPanthoor,
@@ -20,6 +21,7 @@ const Images = {
   MoonNight,
   ShangChi,
   Spiderman,
+  BlackPantherGreyScale,
 };
 
 export default Images;
