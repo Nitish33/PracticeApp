@@ -3,7 +3,7 @@ import {
   useSharedValue,
 } from 'react-native-reanimated';
 
-export default function useAnimated() {
+export default function useScrollAnimated() {
   const animated = useSharedValue(0);
 
   const scrollHandler = useAnimatedScrollHandler(

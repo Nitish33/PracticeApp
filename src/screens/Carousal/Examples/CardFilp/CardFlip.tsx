@@ -1,27 +1,28 @@
 import React from 'react';
 import {View} from 'react-native';
-import Animated from 'react-native-reanimated';
 
 import Styles from './styles';
 import Card from './Card/Card';
-import {CarousalData} from '../../Data';
-import useAnimated from './useAnimated';
 import FlipCard from './FlipCard/FlipCard';
+import useScrollAnimated from '../../useScrollAnimated';
+import CardRender from '../../Components/CardRender/CardRender';
 
 export default function CardFlip() {
-  const {scrollHandler, animated} = useAnimated();
+  const {scrollHandler, animated} = useScrollAnimated();
 
   return (
     <View style={Styles.containerStyle}>
       <FlipCard animated={animated} />
 
-      <Animated.ScrollView horizontal pagingEnabled onScroll={scrollHandler}>
-        {CarousalData.map((data, index) => {
+      <CardRender
+        scrollHandler={scrollHandler}
+        animated={animated}
+        render={(data, index) => {
           return (
             <Card card={data} animated={animated} index={index} key={index} />
           );
-        })}
-      </Animated.ScrollView>
+        }}
+      />
     </View>
   );
 }
