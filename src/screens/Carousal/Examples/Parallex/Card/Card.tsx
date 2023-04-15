@@ -1,17 +1,11 @@
 import React from 'react';
 import {View} from 'react-native';
-import Animated, {SharedValue} from 'react-native-reanimated';
+import Animated from 'react-native-reanimated';
 
 import useAnimated from './useAnimated';
 import Styles, {AVATAR_SIZE} from '../styles';
-import {CarousalInterface} from '../../../Data';
 import Avator from '../../../Components/Avator/Avator';
-
-export interface ICardProps {
-  index: number;
-  card: CarousalInterface;
-  animated: SharedValue<number>;
-}
+import {ICardProps} from '../../../interfaces/CardProps';
 
 export default function Card(props: ICardProps) {
   const {card, index, animated} = props;

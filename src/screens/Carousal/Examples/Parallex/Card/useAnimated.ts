@@ -5,7 +5,8 @@ import {
   useAnimatedStyle,
 } from 'react-native-reanimated';
 
-import {CARD_WIDTH, WINDOW_WIDTH} from '../styles';
+import {CARD_WIDTH} from '../styles';
+import {WINDOW_WIDTH} from '../../../../../utils/Constants';
 
 export default function useAnimated(
   index: number,

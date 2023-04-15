@@ -15,4 +15,5 @@ export enum ScreenName {
   // Carousal
   RNCarousal = 'RNCarousal',
   CLParallesx = 'CLParallesx',
+  CLCardFlip = 'CLCardFlip',
 }

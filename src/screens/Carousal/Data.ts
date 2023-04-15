@@ -15,55 +15,55 @@ export const CarousalData: Array<CarousalInterface> = [
 
   {
     image: Images.BlackWidow,
-    title: 'Black Panthoor',
-    desc: 'Black Panthoor',
+    title: 'Black Widow',
+    desc: 'Black Widow',
   },
 
   {
     image: Images.CaptainAmerica,
-    title: 'Black Panthoor',
-    desc: 'Black Panthoor',
+    title: 'Captain America',
+    desc: 'Captain America',
   },
 
   {
     image: Images.CaptainMarvel,
-    title: 'Black Panthoor',
-    desc: 'Black Panthoor',
+    title: 'Captain Marvel',
+    desc: 'Captain Marvel',
   },
 
   {
     image: Images.DeadPool,
-    title: 'Black Panthoor',
-    desc: 'Black Panthoor',
+    title: 'Dead Pool',
+    desc: 'Dead Pool',
   },
 
   {
     image: Images.Groot,
-    title: 'Black Panthoor',
-    desc: 'Black Panthoor',
+    title: 'Groot',
+    desc: 'Groot',
   },
 
   {
     image: Images.IronMan,
-    title: 'Black Panthoor',
-    desc: 'Black Panthoor',
+    title: 'Iron man',
+    desc: 'Iron man',
   },
 
   {
     image: Images.MoonNight,
-    title: 'Black Panthoor',
-    desc: 'Black Panthoor',
+    title: 'Moon Night',
+    desc: 'Moon Night',
   },
 
   {
     image: Images.ShangChi,
-    title: 'Black Panthoor',
-    desc: 'Black Panthoor',
+    title: 'Shang Chi',
+    desc: 'Shang Chi',
   },
 
   {
     image: Images.Spiderman,
-    title: 'Black Panthoor',
-    desc: 'Black Panthoor',
+    title: 'Spiderman',
+    desc: 'Spiderman',
   },
 ];

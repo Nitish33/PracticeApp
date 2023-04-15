@@ -1,10 +1,7 @@
-import {StyleSheet, Dimensions} from 'react-native';
+import {StyleSheet} from 'react-native';
+import {WINDOW_HEIGHT, WINDOW_WIDTH} from '../../../../utils/Constants';
 
-const {width, height} = Dimensions.get('window');
-
-export const WINDOW_HEIGHT = height;
-export const WINDOW_WIDTH = width;
-export const CARD_WIDTH = width - 48;
+export const CARD_WIDTH = WINDOW_WIDTH - 48;
 export const CARD_HEIGHT = (CARD_WIDTH * 16) / 9;
 export const AVATAR_SIZE = 50;
 
@@ -14,7 +11,7 @@ const styles = StyleSheet.create({
   },
 
   cardContainerStyle: {
-    width: width,
+    width: WINDOW_WIDTH,
     overflow: 'hidden',
     paddingHorizontal: 24,
     height: '100%',
@@ -33,7 +30,7 @@ const styles = StyleSheet.create({
   },
 
   imageStyle: {
-    width: width,
+    width: WINDOW_WIDTH,
     height: '100%',
     borderRadius: 12,
   },
