@@ -6,6 +6,7 @@ import Parallex from './Examples/Parallex';
 import OptionList from '../../Components/OptionList/OptionList';
 import CardFlip from './Examples/CardFilp/CardFlip';
 import ComparisonSlider from './Examples/ComparisonSlider/ComparisonSlider';
+import Cars from './Examples/Cars/Cars';
 
 export const ExamplesList: Array<OptionType> = [
   {
@@ -24,6 +25,12 @@ export const ExamplesList: Array<OptionType> = [
     key: ScreenName.CLSlider,
     label: 'Comparison Slider',
     component: ComparisonSlider,
+  },
+
+  {
+    key: ScreenName.CLCars,
+    label: 'Cars',
+    component: Cars,
   },
 ];
 

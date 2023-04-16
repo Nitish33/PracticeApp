@@ -17,4 +17,5 @@ export enum ScreenName {
   CLParallesx = 'CLParallesx',
   CLCardFlip = 'CLCardFlip',
   CLSlider = 'CLSlider',
+  CLCars = 'CLCars',
 }

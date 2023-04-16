@@ -4,21 +4,26 @@ import Animated, {
   useAnimatedScrollHandler,
 } from 'react-native-reanimated';
 
-import {CarousalData, CarousalInterface} from '../../Data';
-
-export interface ICardRenderProps {
+export interface ICardRenderProps<T extends unknown> {
   animated: SharedValue<number>;
   scrollHandler: ReturnType<typeof useAnimatedScrollHandler>;
 
-  render: (card: CarousalInterface, index: number) => React.ReactNode;
+  data: Array<T>;
+
+  render: (card: T, index: number) => React.ReactNode;
 }
 
-export default function CardRender(props: ICardRenderProps) {
-  const {scrollHandler, render} = props;
+export default function CardRender<T = any>(props: ICardRenderProps<T>) {
+  const {scrollHandler, data = [], render} = props;
 
   return (
-    <Animated.ScrollView horizontal pagingEnabled onScroll={scrollHandler}>
-      {CarousalData.map((data, index) => render?.(data, index))}
+    <Animated.ScrollView
+      horizontal
+      pagingEnabled
+      onScroll={scrollHandler}
+      overScrollMode="never"
+      scrollEventThrottle={16}>
+      {data.map((d, index) => render?.(d, index))}
     </Animated.ScrollView>
   );
 }

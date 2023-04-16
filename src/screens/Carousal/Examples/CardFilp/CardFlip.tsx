@@ -3,6 +3,7 @@ import {View} from 'react-native';
 
 import Styles from './styles';
 import Card from './Card/Card';
+import {CarousalData} from '../../Data';
 import FlipCard from './FlipCard/FlipCard';
 import useScrollAnimated from '../../useScrollAnimated';
 import CardRender from '../../Components/CardRender/CardRender';
@@ -15,6 +16,7 @@ export default function CardFlip() {
       <FlipCard animated={animated} />
 
       <CardRender
+        data={CarousalData}
         scrollHandler={scrollHandler}
         animated={animated}
         render={(data, index) => {
