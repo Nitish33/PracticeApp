@@ -18,4 +18,8 @@ export enum ScreenName {
   CLCardFlip = 'CLCardFlip',
   CLSlider = 'CLSlider',
   CLCars = 'CLCars',
+
+  // Tutorial
+  Tutorial = 'Tutorial',
+  TParallex = 'TParallex',
 }

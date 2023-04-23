@@ -7,17 +7,6 @@ import {OptionType} from '../interfaces/Options';
 
 const MainStackNavigator = createNativeStackNavigator();
 
-// {ExamplesList.map((option: OptionType) => {
-//     return (
-//       <Stack.Screen
-//         key={option.key}
-//         name={option.key}
-//         component={option.component}
-//         options={{title: option.label}}
-//       />
-//     );
-//   })}
-
 const MainStack = () => {
   return (
     <MainStackNavigator.Navigator screenOptions={{headerShown: false}}>

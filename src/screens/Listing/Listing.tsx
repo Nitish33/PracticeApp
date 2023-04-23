@@ -6,6 +6,7 @@ import ReactNativeExample from '../ReactNative/routes';
 import OptionList from '../../Components/OptionList/OptionList';
 import GestureHandlerExample from '../GestureHandlerExample/routes';
 import CarousalExample from '../Carousal/routes';
+import TutorialList from '../../../Tutorials/routes';
 
 export const ExampleList: Array<OptionType> = [
   {
@@ -23,6 +24,12 @@ export const ExampleList: Array<OptionType> = [
     label: 'Carousal',
     key: ScreenName.RNCarousal,
     component: CarousalExample,
+  },
+
+  {
+    label: 'Tutorial',
+    key: ScreenName.Tutorial,
+    component: TutorialList,
   },
 ];
 
