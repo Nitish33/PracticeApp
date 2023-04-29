@@ -70,7 +70,7 @@ export default function Antman() {
 
       <View>
         <Button
-          title="Sink"
+          title="Shrink"
           onPress={() => (animated.value = withTiming(5, {duration: Duration}))}
         />
 
