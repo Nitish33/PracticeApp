@@ -11,6 +11,10 @@ const Spiderman = require('./spiderman.jpg');
 const BlackPantherGreyScale = require('./black_panther_grey_scale.jpeg');
 const Wasp = require('./wasp.png');
 const AntManImage = require('./antman.png');
+const Cloud = require('./cloud.png');
+const Stars = require('./star.png');
+const Sun = require('./sun.png');
+const Moon = require('./moon.png');
 
 const M5552401 = require('./cars/5552401.png');
 const M7383264 = require('./cars/7383264.png');
@@ -36,6 +40,10 @@ const Images = {
   BlackPantherGreyScale,
   AntManImage,
   Wasp,
+  Cloud,
+  Stars,
+  Sun,
+  Moon,
 
   M5552401,
   M7383264,
