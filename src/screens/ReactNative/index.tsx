@@ -5,6 +5,7 @@ import {ScreenName} from '../../utils/Enums';
 import GapExample from './Examples/GapExample';
 import ScrollableStickyButton from './Examples/ScrollableStickyButton';
 import Antman from './Examples/Antman/Antman';
+import DarkMode from './Examples/DarkMode/DarkMode';
 
 export const ExampleList: Array<OptionType> = [
   {key: ScreenName.RNGap, label: 'Gap', component: GapExample},
@@ -18,6 +19,12 @@ export const ExampleList: Array<OptionType> = [
     key: ScreenName.AntmanAnimation,
     label: 'Ant man',
     component: Antman,
+  },
+
+  {
+    key: ScreenName.DarkModeToggle,
+    label: 'Dark Mode Switch',
+    component: DarkMode,
   },
 ];
 

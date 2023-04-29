@@ -12,6 +12,7 @@ export enum ScreenName {
   RNGap = 'RNGap',
   RNScrollView = 'RNScrollView',
   AntmanAnimation = 'AntmanAnimation',
+  DarkModeToggle = 'DarkModeToggle',
 
   // Carousal
   RNCarousal = 'RNCarousal',
