@@ -1,14 +1,10 @@
-import {View, Text, Image, StyleSheet} from 'react-native';
 import React from 'react';
-import Styles, {Size} from './styles';
-import {WIDTH} from '../styles';
-import Animated, {
-  SharedValue,
-  interpolate,
-  useAnimatedStyle,
-} from 'react-native-reanimated';
-import Images from '../../../../../images/images';
+import {View, Image} from 'react-native';
+import Animated, {SharedValue} from 'react-native-reanimated';
+
+import Styles from './styles';
 import useAnimated from './useAnimated';
+import Images from '../../../../../images/images';
 
 export default function Switch({animated}: {animated: SharedValue<number>}) {
   const {containerAnimatedStyle, moonAnimatedStyle} = useAnimated(animated);

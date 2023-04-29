@@ -1,11 +1,11 @@
-import {View, Text, Pressable} from 'react-native';
 import React from 'react';
+import {View, Pressable} from 'react-native';
 
 import Styles from './styles';
-import LightLayer from './LightLayer/LightLayer';
-import DarkLayer from './DarkLayer/DarkLayer';
-import useAnimated from './useAnimated';
 import Switch from './Switch/Switch';
+import useAnimated from './useAnimated';
+import DarkLayer from './DarkLayer/DarkLayer';
+import LightLayer from './LightLayer/LightLayer';
 
 export default function DarkMode() {
   const {animated, toggle} = useAnimated();

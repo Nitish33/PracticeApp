@@ -1,7 +1,5 @@
-import {View, Text} from 'react-native';
-import React from 'react';
-
 import {WIDTH, HEIGHT} from '../styles';
+
 import {
   SharedValue,
   interpolate,

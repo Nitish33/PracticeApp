@@ -1,10 +1,10 @@
-import {View, Text, Image} from 'react-native';
 import React from 'react';
+import {View} from 'react-native';
+import Animated, {SharedValue} from 'react-native-reanimated';
 
 import Styles from './styles';
-import Images from '../../../../../images/images';
-import Animated, {SharedValue} from 'react-native-reanimated';
 import useAnimated from './useAnimated';
+import Images from '../../../../../images/images';
 
 export default function DarkLayer({animated}: {animated: SharedValue<number>}) {
   const {

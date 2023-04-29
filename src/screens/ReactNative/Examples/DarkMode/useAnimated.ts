@@ -1,5 +1,4 @@
-import {View, Text} from 'react-native';
-import React, {useRef} from 'react';
+import {useRef} from 'react';
 import {useSharedValue, withTiming} from 'react-native-reanimated';
 
 const Duration = 1500;

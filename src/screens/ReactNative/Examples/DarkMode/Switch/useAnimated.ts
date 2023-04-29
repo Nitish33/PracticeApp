@@ -1,6 +1,3 @@
-import {View, Text} from 'react-native';
-import React from 'react';
-
 import {Size} from './styles';
 import {WIDTH} from '../styles';
 import {
