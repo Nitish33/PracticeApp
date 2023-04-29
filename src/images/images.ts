@@ -9,6 +9,8 @@ const MoonNight = require('./moon_knight.jpg');
 const ShangChi = require('./shang_chi.jpg');
 const Spiderman = require('./spiderman.jpg');
 const BlackPantherGreyScale = require('./black_panther_grey_scale.jpeg');
+const Wasp = require('./wasp.png');
+const AntManImage = require('./antman.png');
 
 const M5552401 = require('./cars/5552401.png');
 const M7383264 = require('./cars/7383264.png');
@@ -32,6 +34,8 @@ const Images = {
   ShangChi,
   Spiderman,
   BlackPantherGreyScale,
+  AntManImage,
+  Wasp,
 
   M5552401,
   M7383264,

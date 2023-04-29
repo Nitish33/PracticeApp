@@ -1,23 +1,22 @@
 import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
-import Listing, {ExamplesList} from './';
+import Listing, {ExampleList} from '.';
 import {OptionType} from '../../interfaces/Options';
 
 const Stack = createNativeStackNavigator();
 
-const Routes = () => {
+const ReactNativeStack = () => {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="Carousal Example" component={Listing} />
-
-      {ExamplesList.map((option: OptionType) => {
+      <Stack.Screen name="SVG Animation" component={Listing} />
+      {ExampleList.map((option: OptionType) => {
         return (
           <Stack.Screen
             key={option.key}
             name={option.key}
             component={option.component}
-            options={{title: option.label, headerShown: false}}
+            options={{title: option.label}}
           />
         );
       })}
@@ -25,4 +24,4 @@ const Routes = () => {
   );
 };
 
-export default Routes;
+export default ReactNativeStack;

@@ -7,6 +7,7 @@ import OptionList from '../../Components/OptionList/OptionList';
 import GestureHandlerExample from '../GestureHandlerExample/routes';
 import CarousalExample from '../Carousal/routes';
 import TutorialList from '../../../Tutorials/routes';
+import SVGList from '../Svg/routes';
 
 export const ExampleList: Array<OptionType> = [
   {
@@ -30,6 +31,12 @@ export const ExampleList: Array<OptionType> = [
     label: 'Tutorial',
     key: ScreenName.Tutorial,
     component: TutorialList,
+  },
+
+  {
+    label: 'SVG Animation',
+    key: ScreenName.SVG,
+    component: SVGList,
   },
 ];
 

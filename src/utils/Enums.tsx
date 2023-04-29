@@ -11,6 +11,7 @@ export enum ScreenName {
   ReactNativeExample = 'ReactNativeExample',
   RNGap = 'RNGap',
   RNScrollView = 'RNScrollView',
+  AntmanAnimation = 'AntmanAnimation',
 
   // Carousal
   RNCarousal = 'RNCarousal',
@@ -18,6 +19,11 @@ export enum ScreenName {
   CLCardFlip = 'CLCardFlip',
   CLSlider = 'CLSlider',
   CLCars = 'CLCars',
+  CLTitleMask = 'CLTitleMask',
+
+  // SVG
+  SVG = 'SVG',
+  SVGProgress = 'SVGProgress',
 
   // Tutorial
   Tutorial = 'Tutorial',
