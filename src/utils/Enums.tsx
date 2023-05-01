@@ -14,6 +14,7 @@ export enum ScreenName {
   AntmanAnimation = 'AntmanAnimation',
   DarkModeToggle = 'DarkModeToggle',
   PopularityGraph = 'PopularityGraph',
+  PizzaAnimation = 'PizzaAnimation',
 
   // Carousal
   RNCarousal = 'RNCarousal',

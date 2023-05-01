@@ -7,6 +7,7 @@ import ScrollableStickyButton from './Examples/ScrollableStickyButton';
 import Antman from './Examples/Antman/Antman';
 import DarkMode from './Examples/DarkMode/DarkMode';
 import PopularityGraph from './Examples/PopularityGraph/PopularityGraph';
+import PizzaAnimation from './Examples/PizzaAnimation/PizzaAnimation';
 
 export const ExampleList: Array<OptionType> = [
   {key: ScreenName.RNGap, label: 'Gap', component: GapExample},
@@ -32,6 +33,12 @@ export const ExampleList: Array<OptionType> = [
     key: ScreenName.PopularityGraph,
     label: 'Popularity Graph',
     component: PopularityGraph,
+  },
+
+  {
+    key: ScreenName.PizzaAnimation,
+    label: 'Pizza Animation',
+    component: PizzaAnimation,
   },
 ];
 
