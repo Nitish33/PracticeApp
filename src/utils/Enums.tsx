@@ -13,6 +13,7 @@ export enum ScreenName {
   RNScrollView = 'RNScrollView',
   AntmanAnimation = 'AntmanAnimation',
   DarkModeToggle = 'DarkModeToggle',
+  PopularityGraph = 'PopularityGraph',
 
   // Carousal
   RNCarousal = 'RNCarousal',
