@@ -16,6 +16,13 @@ const Stars = require('./star.png');
 const Sun = require('./sun.png');
 const Moon = require('./moon.png');
 
+// Pizza Animation
+const Coffee = require('./pizzaAnimation/coffee.png');
+const CoffeeCup = require('./pizzaAnimation/coffeeCup.png');
+const Momos = require('./pizzaAnimation/momos.png');
+const Paneer = require('./pizzaAnimation/paneer.png');
+const PizzaSlice = require('./pizzaAnimation/pizzaSlice.png');
+
 const M5552401 = require('./cars/5552401.png');
 const M7383264 = require('./cars/7383264.png');
 const M7437631 = require('./cars/7437631.png');
@@ -27,6 +34,12 @@ const M8349925 = require('./cars/8349925.png');
 const M8426218 = require('./cars/8426218.png');
 
 const Images = {
+  Coffee,
+  CoffeeCup,
+  Momos,
+  Paneer,
+  PizzaSlice,
+
   BlackPanthoor,
   BlackWidow,
   CaptainAmerica,
