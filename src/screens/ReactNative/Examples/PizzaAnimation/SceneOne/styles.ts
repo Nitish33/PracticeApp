@@ -6,6 +6,10 @@ const styles = StyleSheet.create({
     width: WINDOW_WIDTH,
   },
 
+  contentContainerStyle: {
+    flex: 1,
+  },
+
   fruitsImageStyle: {
     width: 400,
     height: 400,

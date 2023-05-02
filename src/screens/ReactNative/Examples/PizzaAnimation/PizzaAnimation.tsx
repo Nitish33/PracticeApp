@@ -9,7 +9,7 @@ import SceneTwo from './SceneTwo/SceneTwo';
 import SceneThree from './SceneThree/SceneThree';
 
 export default function PizzaAnimation() {
-  const {gestureHandler} = useAnimated();
+  const {animated, gestureHandler} = useAnimated();
 
   return (
     <View style={Styles.containerStyle}>
@@ -18,11 +18,11 @@ export default function PizzaAnimation() {
         contentContainerStyle={Styles.scrollView}
         horizontal
         pagingEnabled>
-        <SceneOne />
+        <SceneOne animated={animated} />
 
-        <SceneTwo />
+        <SceneTwo animated={animated} />
 
-        <SceneThree />
+        <SceneThree animated={animated} />
       </Animated.ScrollView>
     </View>
   );

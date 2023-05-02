@@ -1,17 +1,36 @@
 import React from 'react';
-import {View, Image} from 'react-native';
+import {View} from 'react-native';
+import Animated, {SharedValue} from 'react-native-reanimated';
 
 import Styles from './styles';
+import useAnimated from './useAnimated';
 import Images from '../../../../../images/images';
+import Information from '../Information/Information';
 
-export default function SceneOne() {
+export default function SceneOne({animated}: {animated: SharedValue<number>}) {
+  const {momosAnimatedStyle, fruitsAnimatedStyle, dryFruitsAnimatedStyle} =
+    useAnimated(animated);
+
   return (
     <View style={Styles.containerStyle}>
-      <Image source={Images.Fruits} style={Styles.fruitsImageStyle} />
+      <View style={Styles.contentContainerStyle}>
+        <Animated.Image
+          source={Images.Fruits}
+          style={[Styles.fruitsImageStyle, fruitsAnimatedStyle]}
+        />
 
-      <Image source={Images.Momos} style={Styles.momosImageStyle} />
+        <Animated.Image
+          source={Images.Momos}
+          style={[Styles.momosImageStyle, momosAnimatedStyle]}
+        />
 
-      <Image source={Images.DryFruits} style={Styles.dryFruitsStyle} />
+        <Animated.Image
+          source={Images.DryFruits}
+          style={[Styles.dryFruitsStyle, dryFruitsAnimatedStyle]}
+        />
+      </View>
+
+      <Information />
     </View>
   );
 }
