@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
 
   coffeeContainer: {
     position: 'absolute',
-    top: WINDOW_HEIGHT / 2,
+    top: WINDOW_HEIGHT / 2 + 50,
     left: 20,
   },
 
@@ -33,10 +33,10 @@ const styles = StyleSheet.create({
   },
 
   coffeeTexture: {
-    width: 55,
-    height: 55,
-    left: 22,
-    top: 15,
+    width: 50,
+    height: 50,
+    left: 19,
+    top: 16,
     position: 'absolute',
     transform: [{rotate: '0deg'}],
   },

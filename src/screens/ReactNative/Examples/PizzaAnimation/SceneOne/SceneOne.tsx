@@ -30,7 +30,11 @@ export default function SceneOne({animated}: {animated: SharedValue<number>}) {
         />
       </View>
 
-      <Information />
+      <Information
+        label="Things you can do"
+        title="Browse Food"
+        message="Select from a range of food. Find your favourite or even pick chef recommedations"
+      />
     </View>
   );
 }

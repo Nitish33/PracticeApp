@@ -3,10 +3,20 @@ import React from 'react';
 
 import Styles from './styles';
 
-export default function Information() {
+export interface IInformationProps {
+  label: string;
+  title: string;
+  message: string;
+}
+
+export default function Information(props: IInformationProps) {
+  const {label, title, message} = props;
+
   return (
     <View style={Styles.containerStyle}>
-      <Text>Information</Text>
+      <Text style={Styles.textStyle}>{label}</Text>
+      <Text style={Styles.textStyle}>{title}</Text>
+      <Text style={Styles.textStyle}>{message}</Text>
     </View>
   );
 }

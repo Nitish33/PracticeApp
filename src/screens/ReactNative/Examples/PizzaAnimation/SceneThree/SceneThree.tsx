@@ -12,23 +12,37 @@ export default function SceneThree({
 }: {
   animated: SharedValue<number>;
 }) {
-  const {coffeeAnimatedStyle} = useAnimated();
+  const {
+    plateAnimatdStyle,
+    coffeeAnimatedStyle,
+    contentContainerAnimatedStyle,
+    coffeeContainerAnimatedStyle,
+  } = useAnimated(animated);
 
   return (
     <View style={Styles.containerStyle}>
-      <View style={Styles.contentContainerStyle}>
-        <Image source={Images.Plate} style={Styles.plateStyle} />
+      <Animated.View
+        style={[Styles.contentContainerStyle, contentContainerAnimatedStyle]}>
+        <Animated.Image
+          source={Images.Plate}
+          style={[Styles.plateStyle, plateAnimatdStyle]}
+        />
 
-        <View style={Styles.coffeeContainer}>
+        <Animated.View
+          style={[Styles.coffeeContainer, coffeeContainerAnimatedStyle]}>
           <Image source={Images.CoffeeCup} style={Styles.coffeeCup} />
           <Animated.Image
             source={Images.Coffee}
             style={[Styles.coffeeTexture, coffeeAnimatedStyle]}
           />
-        </View>
-      </View>
+        </Animated.View>
+      </Animated.View>
 
-      <Information />
+      <Information
+        label="Things you can do"
+        title="Order meals"
+        message="Request your meals and find our how long it takes for the delivery and much more"
+      />
     </View>
   );
 }

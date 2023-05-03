@@ -33,6 +33,7 @@ export default function useAnimated(scrollAnimated: SharedValue<number>) {
   const fruitsAnimatedStyle = useAnimatedStyle(() => {
     return {
       transform: [
+        {scale: 1.1},
         {
           rotateZ: `${interpolate(
             scrollAnimated.value,
@@ -47,6 +48,7 @@ export default function useAnimated(scrollAnimated: SharedValue<number>) {
   const dryFruitsAnimatedStyle = useAnimatedStyle(() => {
     return {
       transform: [
+        {scale: 1.2},
         {
           translateX: interpolate(scrollAnimated.value, inputRange, [0, 50]),
         },
@@ -54,7 +56,7 @@ export default function useAnimated(scrollAnimated: SharedValue<number>) {
           rotateZ: `${interpolate(
             scrollAnimated.value,
             inputRange,
-            [0, 70],
+            [50, 120],
           )}deg`,
         },
       ],

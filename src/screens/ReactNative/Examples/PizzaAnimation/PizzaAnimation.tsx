@@ -17,6 +17,7 @@ export default function PizzaAnimation() {
         onScroll={gestureHandler}
         contentContainerStyle={Styles.scrollView}
         horizontal
+        scrollEventThrottle={16}
         pagingEnabled>
         <SceneOne animated={animated} />
 

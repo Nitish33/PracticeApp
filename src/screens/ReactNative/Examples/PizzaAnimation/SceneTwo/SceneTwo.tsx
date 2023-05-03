@@ -4,17 +4,42 @@ import {View, Image} from 'react-native';
 import Styles from './styles';
 import Images from '../../../../../images/images';
 import Information from '../Information/Information';
-import {SharedValue} from 'react-native-reanimated';
+import Animated, {SharedValue} from 'react-native-reanimated';
+import useAnimated from './useAnimated';
 
 export default function SceneTwo({animated}: {animated: SharedValue<number>}) {
+  const {
+    pizzaAnimatedStyle,
+    pizzaContainerStyle,
+    pizzaContentContainerStyle,
+    pizzaSliceAnimatedStyle,
+  } = useAnimated(animated);
+
   return (
     <View style={Styles.containerStyle}>
-      <View style={Styles.pizzaContainer}>
-        <Image style={Styles.pizzaStyle} source={Images.Pizza} />
-        <Image style={Styles.pizzaSliceStyle} source={Images.PizzaSlice} />
-      </View>
+      <Animated.View style={[Styles.pizzaContainer, pizzaContainerStyle]}>
+        <Animated.View
+          style={[Styles.pizzaContentContainer, pizzaContentContainerStyle]}>
+          <Animated.Image
+            style={[Styles.pizzaStyle, pizzaAnimatedStyle]}
+            source={Images.Pizza}
+          />
 
-      <Information />
+          <Animated.View
+            style={[Styles.pizzaSliceStyle, pizzaSliceAnimatedStyle]}>
+            <Animated.Image
+              source={Images.PizzaSlice}
+              style={Styles.pizzaSliceLayerStyle}
+            />
+          </Animated.View>
+        </Animated.View>
+      </Animated.View>
+
+      <Information
+        label="Things you can do"
+        title="Find favourites"
+        message="Easily find favourites. We will find food similar to your searches as well"
+      />
     </View>
   );
 }

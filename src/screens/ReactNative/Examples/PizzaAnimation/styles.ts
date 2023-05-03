@@ -4,12 +4,12 @@ import {WINDOW_WIDTH} from '../../../../utils/Constants';
 const styles = StyleSheet.create({
   containerStyle: {
     flex: 1,
-    backgroundColor: 'red',
   },
+
+  contentContainerStyle: {},
 
   scrollView: {
     width: 3 * WINDOW_WIDTH,
-    backgroundColor: 'blue',
   },
 });
 

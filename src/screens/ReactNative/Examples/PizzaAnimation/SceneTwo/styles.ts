@@ -4,6 +4,7 @@ import {WINDOW_WIDTH} from '../../../../../utils/Constants';
 const styles = StyleSheet.create({
   containerStyle: {
     width: WINDOW_WIDTH,
+    zIndex: 10,
   },
 
   contentContainerStyle: {
@@ -15,14 +16,17 @@ const styles = StyleSheet.create({
     flex: 1,
   },
 
-  pizzaStyle: {
+  pizzaContentContainer: {
     height: 300,
-    position: 'absolute',
-    resizeMode: 'contain',
-    left: WINDOW_WIDTH * 0.1,
     width: WINDOW_WIDTH * 0.8,
-    transform: [{rotate: '10deg'}],
-    zIndex: 10,
+    marginLeft: WINDOW_WIDTH * 0.1,
+  },
+
+  pizzaStyle: {
+    height: '100%',
+    resizeMode: 'contain',
+    width: '100%',
+    transform: [{rotate: '0deg'}],
   },
 
   pizzaSliceStyle: {
@@ -30,8 +34,15 @@ const styles = StyleSheet.create({
     height: WINDOW_WIDTH * 0.4,
     width: WINDOW_WIDTH * 0.4,
     resizeMode: 'contain',
-    left: WINDOW_WIDTH / 2 - 5,
+    left: WINDOW_WIDTH * 0.4,
     top: 70,
+  },
+
+  pizzaSliceLayerStyle: {
+    position: 'absolute',
+    width: '100%',
+    height: '100%',
+    resizeMode: 'contain',
   },
 });
 

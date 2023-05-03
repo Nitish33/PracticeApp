@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
     height: 75,
     resizeMode: 'contain',
     position: 'absolute',
-    marginTop: WINDOW_HEIGHT * 0.6,
+    marginTop: 400,
     marginLeft: WINDOW_WIDTH * 0.6,
   },
 });
