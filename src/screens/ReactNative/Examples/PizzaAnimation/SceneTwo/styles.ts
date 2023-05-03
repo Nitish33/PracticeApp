@@ -1,5 +1,5 @@
 import {StyleSheet} from 'react-native';
-import {WINDOW_HEIGHT, WINDOW_WIDTH} from '../../../../../utils/Constants';
+import {WINDOW_WIDTH} from '../../../../../utils/Constants';
 
 const styles = StyleSheet.create({
   containerStyle: {
@@ -43,6 +43,37 @@ const styles = StyleSheet.create({
     width: '100%',
     height: '100%',
     resizeMode: 'contain',
+  },
+
+  coffeeContainer: {
+    position: 'absolute',
+    top: 30,
+    right: 100,
+    backgroundColor: 'red',
+  },
+
+  coffeeCup: {
+    width: 100,
+    height: 90,
+    resizeMode: 'contain',
+    position: 'absolute',
+  },
+
+  coffeeTexture: {
+    width: 50,
+    height: 50,
+    left: 19,
+    top: 16,
+    position: 'absolute',
+    transform: [{rotate: '0deg'}],
+  },
+
+  noodlesStyle: {
+    position: 'absolute',
+    width: 200,
+    left: 0,
+    bottom: -20,
+    height: 200,
   },
 });
 

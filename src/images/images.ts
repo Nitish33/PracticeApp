@@ -28,6 +28,9 @@ const DryFruits = require('./pizzaAnimation/dryFruits.png');
 const Plate = require('./pizzaAnimation/plate.png');
 const PizzaSlice1 = require('./pizzaAnimation/pizzaSlice-1.png');
 const Bread = require('./pizzaAnimation/Bread.png');
+const Noodles = require('./pizzaAnimation/noodles.png');
+const ColdCoffee = require('./pizzaAnimation/drink.png');
+const Pasta = require('./pizzaAnimation/pasta.png');
 
 const M5552401 = require('./cars/5552401.png');
 const M7383264 = require('./cars/7383264.png');
@@ -51,6 +54,9 @@ const Images = {
   Plate,
   PizzaSlice1,
   Bread,
+  Noodles,
+  ColdCoffee,
+  Pasta,
 
   BlackPanthoor,
   BlackWidow,

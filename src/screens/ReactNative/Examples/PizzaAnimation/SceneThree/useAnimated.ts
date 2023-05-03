@@ -1,18 +1,11 @@
-import {useEffect} from 'react';
 import {
-  Easing,
   SharedValue,
   interpolate,
   useAnimatedStyle,
-  useSharedValue,
-  withRepeat,
-  withTiming,
 } from 'react-native-reanimated';
 import {WINDOW_HEIGHT, WINDOW_WIDTH} from '../../../../../utils/Constants';
 
 export default function useAnimated(scrollAnimated: SharedValue<number>) {
-  const coffeeAnimated = useSharedValue(0);
-
   const inputRange = [0, WINDOW_WIDTH, 2 * WINDOW_WIDTH];
 
   const tableAnimatedStyle = useAnimatedStyle(() => {
@@ -29,14 +22,6 @@ export default function useAnimated(scrollAnimated: SharedValue<number>) {
     };
   }, []);
 
-  useEffect(() => {
-    coffeeAnimated.value = withRepeat(
-      withTiming(1, {duration: 10000, easing: Easing.linear}),
-      -1,
-    );
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
   const contentContainerAnimatedStyle = useAnimatedStyle(() => {
     return {
       transform: [
@@ -48,13 +33,6 @@ export default function useAnimated(scrollAnimated: SharedValue<number>) {
           ]),
         },
       ],
-    };
-  }, []);
-
-  const coffeeAnimatedStyle = useAnimatedStyle(() => {
-    const rotation = interpolate(coffeeAnimated.value, [0, 1], [0, 360]);
-    return {
-      transform: [{rotate: `${rotation}deg`}],
     };
   }, []);
 
@@ -97,7 +75,7 @@ export default function useAnimated(scrollAnimated: SharedValue<number>) {
           translateY: interpolate(
             scrollAnimated.value,
             inputRange,
-            [200, 200, 0],
+            [200, 200, -100],
           ),
         },
 
@@ -116,7 +94,6 @@ export default function useAnimated(scrollAnimated: SharedValue<number>) {
     tableAnimatedStyle,
     plateAnimatdStyle,
     contentContainerAnimatedStyle,
-    coffeeAnimatedStyle,
     coffeeContainerAnimatedStyle,
   };
 }

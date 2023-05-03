@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Image} from 'react-native';
+import {View} from 'react-native';
 
 import Styles from './styles';
 import Images from '../../../../../images/images';
@@ -12,13 +12,8 @@ export default function SceneThree({
 }: {
   animated: SharedValue<number>;
 }) {
-  const {
-    tableAnimatedStyle,
-    plateAnimatdStyle,
-    coffeeAnimatedStyle,
-    contentContainerAnimatedStyle,
-    coffeeContainerAnimatedStyle,
-  } = useAnimated(animated);
+  const {tableAnimatedStyle, plateAnimatdStyle, contentContainerAnimatedStyle} =
+    useAnimated(animated);
 
   return (
     <View style={Styles.containerStyle}>
@@ -34,15 +29,6 @@ export default function SceneThree({
           source={Images.Plate}
           style={[Styles.plateStyle, plateAnimatdStyle]}
         />
-
-        <Animated.View
-          style={[Styles.coffeeContainer, coffeeContainerAnimatedStyle]}>
-          <Image source={Images.CoffeeCup} style={Styles.coffeeCup} />
-          <Animated.Image
-            source={Images.Coffee}
-            style={[Styles.coffeeTexture, coffeeAnimatedStyle]}
-          />
-        </Animated.View>
       </Animated.View>
 
       <Information

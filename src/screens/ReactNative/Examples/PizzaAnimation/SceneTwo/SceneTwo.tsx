@@ -6,35 +6,59 @@ import Images from '../../../../../images/images';
 import Information from '../Information/Information';
 import Animated, {SharedValue} from 'react-native-reanimated';
 import useAnimated from './useAnimated';
-import {WINDOW_HEIGHT} from '../../../../../utils/Constants';
 
 export default function SceneTwo({animated}: {animated: SharedValue<number>}) {
   const {
     pizzaAnimatedStyle,
+    noodleAnimatedStyle,
     pizzaContainerStyle,
+    coffeeAnimatedStyle,
+    coffeeCupAnimatedStyle,
     pizzaContentContainerStyle,
     pizzaSliceAnimatedStyle,
   } = useAnimated(animated);
 
   return (
     <View style={Styles.containerStyle}>
-      <Animated.View style={[Styles.pizzaContainer, pizzaContainerStyle]}>
-        <Animated.View
-          style={[Styles.pizzaContentContainer, pizzaContentContainerStyle]}>
-          <Animated.Image
-            style={[Styles.pizzaStyle, pizzaAnimatedStyle]}
-            source={Images.Pizza}
-          />
-
+      <View style={{flex: 1}}>
+        <Animated.View style={[Styles.pizzaContainer, pizzaContainerStyle]}>
           <Animated.View
-            style={[Styles.pizzaSliceStyle, pizzaSliceAnimatedStyle]}>
+            style={[Styles.pizzaContentContainer, pizzaContentContainerStyle]}>
             <Animated.Image
-              source={Images.PizzaSlice}
-              style={Styles.pizzaSliceLayerStyle}
+              style={[Styles.pizzaStyle, pizzaAnimatedStyle]}
+              source={Images.Pizza}
             />
+
+            <Animated.View
+              style={[Styles.pizzaSliceStyle, pizzaSliceAnimatedStyle]}>
+              <Animated.Image
+                source={Images.PizzaSlice}
+                style={Styles.pizzaSliceLayerStyle}
+              />
+            </Animated.View>
           </Animated.View>
         </Animated.View>
-      </Animated.View>
+
+        <Animated.View style={[Styles.coffeeContainer, coffeeCupAnimatedStyle]}>
+          <Image source={Images.CoffeeCup} style={Styles.coffeeCup} />
+          <Animated.Image
+            source={Images.Coffee}
+            style={[Styles.coffeeTexture, coffeeAnimatedStyle]}
+          />
+        </Animated.View>
+
+        <Animated.Image
+          style={[Styles.noodlesStyle, noodleAnimatedStyle]}
+          source={Images.Noodles}
+          resizeMode="contain"
+        />
+
+        <Animated.Image
+          style={[Styles.noodlesStyle]}
+          source={Images.Pasta}
+          resizeMode="contain"
+        />
+      </View>
 
       <Information
         label="Things you can do"
