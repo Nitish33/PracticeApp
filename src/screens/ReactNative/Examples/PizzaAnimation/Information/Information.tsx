@@ -14,9 +14,9 @@ export default function Information(props: IInformationProps) {
 
   return (
     <View style={Styles.containerStyle}>
-      <Text style={Styles.textStyle}>{label}</Text>
-      <Text style={Styles.textStyle}>{title}</Text>
-      <Text style={Styles.textStyle}>{message}</Text>
+      <Text style={[Styles.textStyle, Styles.lableStyle]}>{label}</Text>
+      <Text style={[Styles.textStyle, Styles.titleStyle]}>{title}</Text>
+      <Text style={[Styles.textStyle, Styles.messageStyle]}>{message}</Text>
     </View>
   );
 }

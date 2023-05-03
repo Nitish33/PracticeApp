@@ -12,9 +12,10 @@ export default function useAnimated(scrollAnimated: SharedValue<number>) {
   const momosAnimatedStyle = useAnimatedStyle(() => {
     return {
       transform: [
+        {scale: 0.75},
         {
           translateX: interpolate(scrollAnimated.value, inputRange, [
-            0,
+            -50,
             WINDOW_WIDTH / 4,
           ]),
         },

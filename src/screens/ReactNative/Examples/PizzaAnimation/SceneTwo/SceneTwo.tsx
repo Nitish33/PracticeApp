@@ -6,6 +6,7 @@ import Images from '../../../../../images/images';
 import Information from '../Information/Information';
 import Animated, {SharedValue} from 'react-native-reanimated';
 import useAnimated from './useAnimated';
+import {WINDOW_HEIGHT} from '../../../../../utils/Constants';
 
 export default function SceneTwo({animated}: {animated: SharedValue<number>}) {
   const {

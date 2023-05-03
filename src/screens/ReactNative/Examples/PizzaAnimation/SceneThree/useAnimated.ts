@@ -15,6 +15,20 @@ export default function useAnimated(scrollAnimated: SharedValue<number>) {
 
   const inputRange = [0, WINDOW_WIDTH, 2 * WINDOW_WIDTH];
 
+  const tableAnimatedStyle = useAnimatedStyle(() => {
+    return {
+      transform: [
+        {
+          translateX: interpolate(scrollAnimated.value, inputRange, [
+            -2 * WINDOW_WIDTH,
+            -WINDOW_WIDTH - 50,
+            -100,
+          ]),
+        },
+      ],
+    };
+  }, []);
+
   useEffect(() => {
     coffeeAnimated.value = withRepeat(
       withTiming(1, {duration: 10000, easing: Easing.linear}),
@@ -99,6 +113,7 @@ export default function useAnimated(scrollAnimated: SharedValue<number>) {
   }, []);
 
   return {
+    tableAnimatedStyle,
     plateAnimatdStyle,
     contentContainerAnimatedStyle,
     coffeeAnimatedStyle,

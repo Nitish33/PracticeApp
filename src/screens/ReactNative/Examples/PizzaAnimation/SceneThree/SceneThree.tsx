@@ -13,6 +13,7 @@ export default function SceneThree({
   animated: SharedValue<number>;
 }) {
   const {
+    tableAnimatedStyle,
     plateAnimatdStyle,
     coffeeAnimatedStyle,
     contentContainerAnimatedStyle,
@@ -21,6 +22,12 @@ export default function SceneThree({
 
   return (
     <View style={Styles.containerStyle}>
+      <Animated.Image
+        source={Images.Bread}
+        style={[Styles.tableStyle, tableAnimatedStyle]}
+        resizeMode="cover"
+      />
+
       <Animated.View
         style={[Styles.contentContainerStyle, contentContainerAnimatedStyle]}>
         <Animated.Image

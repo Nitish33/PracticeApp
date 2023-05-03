@@ -72,12 +72,13 @@ export default function useAnimated(scrollAnimated: SharedValue<number>) {
   const pizzaSliceAnimatedStyle = useAnimatedStyle(() => {
     return {
       zIndex: 10,
+
       transform: [
         {
           translateX: interpolate(
             scrollAnimated.value,
             inputRange,
-            [-5, -5, 50],
+            [-5, -5, 40],
           ),
         },
 

@@ -10,6 +10,12 @@ const styles = StyleSheet.create({
     flex: 1,
   },
 
+  tableStyle: {
+    position: 'absolute',
+    width: WINDOW_WIDTH + 100,
+    height: 0.7 * WINDOW_HEIGHT,
+  },
+
   plateStyle: {
     width: 300,
     height: 300,
