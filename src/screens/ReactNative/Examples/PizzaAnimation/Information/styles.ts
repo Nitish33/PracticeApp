@@ -3,7 +3,8 @@ import {WINDOW_WIDTH} from '../../../../../utils/Constants';
 
 const styles = StyleSheet.create({
   containerStyle: {
-    height: 0.45 * WINDOW_WIDTH,
+    zIndex: 10,
+    height: 0.4 * WINDOW_WIDTH,
   },
 
   textStyle: {
