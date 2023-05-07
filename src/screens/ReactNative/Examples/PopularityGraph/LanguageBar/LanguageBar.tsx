@@ -1,13 +1,10 @@
 import React from 'react';
-import {TextInput} from 'react-native';
 import Animated, {SharedValue} from 'react-native-reanimated';
 
 import Styles from './styles';
 import useAnimated from './useAnimated';
 import {LanguageOption} from '../PopularityData';
 import ReanimatedText from '../../../../../Components/ReanimatedText/ReanimatedText';
-
-const AnimatedTextInput = Animated.createAnimatedComponent(TextInput);
 
 export interface ILanguageBarProps {
   index: number;
@@ -18,12 +15,11 @@ export interface ILanguageBarProps {
 Animated.addWhitelistedNativeProps({children: true});
 
 export default function LanguageBar(props: ILanguageBarProps) {
-  const {animated, language, index} = props;
+  const {animated, language} = props;
 
-  const {ViewStyle, containerAnimatedStyle, rating, textValue} = useAnimated(
+  const {ViewStyle, containerAnimatedStyle, rating} = useAnimated(
     animated,
     language,
-    index,
   );
 
   return (
