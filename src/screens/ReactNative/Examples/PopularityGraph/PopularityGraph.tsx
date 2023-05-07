@@ -11,7 +11,7 @@ export default function PopularityGraph() {
   const {yearAnimated, monthAndYear, startAnimation} = useAnimated();
 
   return (
-    <View>
+    <View style={Styles.containerStyle}>
       <View style={[Styles.graphContainer]}>
         <Text style={Styles.xAxis}>Popularity</Text>
 

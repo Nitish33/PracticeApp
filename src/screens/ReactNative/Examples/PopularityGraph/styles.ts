@@ -11,7 +11,6 @@ const styles = StyleSheet.create({
   containerStyle: {
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'center',
   },
 
   graphContainer: {

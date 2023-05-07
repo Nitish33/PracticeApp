@@ -23,7 +23,7 @@ export default function useAnimated() {
   const startAnimation = () => {
     yearAnimated.value = withRepeat(
       withTiming(MAX_DURATION, {
-        duration: MAX_DURATION * 2000,
+        duration: MAX_DURATION * 1500,
         easing: Easing.linear,
       }),
     );

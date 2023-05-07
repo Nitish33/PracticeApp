@@ -37,7 +37,7 @@ export default function useAnimated(
   const containerAnimatedStyle = useAnimatedStyle(() => {
     return {
       transform: [
-        {translateY: withTiming(50 * position.value, {duration: 1500})},
+        {translateY: withTiming(50 * position.value, {duration: 1000})},
       ],
       position: 'absolute',
       left: 0,
