@@ -11,7 +11,7 @@ export const Data = [
       german: 158,
       mandarin: 187,
     },
-    popularity: ['english', 'mandarin', 'spanish', 'german', 'french'],
+    popularity: {english: 0, mandarin: 1, spanish: 2, german: 3, french: 4},
   },
   {
     year: 2010,
@@ -23,7 +23,7 @@ export const Data = [
       german: 225,
       mandarin: 203,
     },
-    popularity: ['english', 'french', 'spanish', 'german', 'mandarin'],
+    popularity: {english: 0, french: 1, spanish: 2, german: 3, mandarin: 4},
   },
   {
     year: 2010,
@@ -35,7 +35,7 @@ export const Data = [
       german: 244,
       mandarin: 84,
     },
-    popularity: ['english', 'german', 'spanish', 'french', 'mandarin'],
+    popularity: {english: 0, german: 1, spanish: 2, french: 3, mandarin: 4},
   },
   {
     year: 2010,
@@ -47,7 +47,7 @@ export const Data = [
       german: 128,
       mandarin: 92,
     },
-    popularity: ['english', 'german', 'mandarin', 'spanish', 'french'],
+    popularity: {english: 0, german: 1, mandarin: 2, spanish: 3, french: 4},
   },
   {
     year: 2010,
@@ -59,7 +59,7 @@ export const Data = [
       german: 126,
       mandarin: 82,
     },
-    popularity: ['english', 'spanish', 'french', 'german', 'mandarin'],
+    popularity: {english: 0, spanish: 1, french: 2, german: 3, mandarin: 4},
   },
   {
     year: 2010,
@@ -71,7 +71,7 @@ export const Data = [
       german: 276,
       mandarin: 80,
     },
-    popularity: ['english', 'german', 'spanish', 'mandarin', 'french'],
+    popularity: {english: 0, german: 1, spanish: 2, mandarin: 3, french: 4},
   },
   {
     year: 2010,
@@ -83,7 +83,7 @@ export const Data = [
       german: 105,
       mandarin: 182,
     },
-    popularity: ['spanish', 'french', 'mandarin', 'german', 'english'],
+    popularity: {spanish: 0, french: 1, mandarin: 2, german: 3, english: 4},
   },
   {
     year: 2010,
@@ -95,7 +95,7 @@ export const Data = [
       german: 194,
       mandarin: 11,
     },
-    popularity: ['english', 'french', 'german', 'spanish', 'mandarin'],
+    popularity: {english: 0, french: 1, german: 2, spanish: 3, mandarin: 4},
   },
   {
     year: 2010,
@@ -107,7 +107,7 @@ export const Data = [
       german: 49,
       mandarin: 225,
     },
-    popularity: ['english', 'mandarin', 'spanish', 'french', 'german'],
+    popularity: {english: 0, mandarin: 1, spanish: 2, french: 3, german: 4},
   },
   {
     year: 2010,
@@ -119,7 +119,7 @@ export const Data = [
       german: 202,
       mandarin: 82,
     },
-    popularity: ['english', 'french', 'spanish', 'german', 'mandarin'],
+    popularity: {english: 0, french: 1, spanish: 2, german: 3, mandarin: 4},
   },
   {
     year: 2010,
@@ -131,7 +131,7 @@ export const Data = [
       german: 13,
       mandarin: 240,
     },
-    popularity: ['english', 'french', 'mandarin', 'spanish', 'german'],
+    popularity: {english: 0, french: 1, mandarin: 2, spanish: 3, german: 4},
   },
   {
     year: 2010,
@@ -143,7 +143,7 @@ export const Data = [
       german: 179,
       mandarin: 149,
     },
-    popularity: ['english', 'french', 'german', 'mandarin', 'spanish'],
+    popularity: {english: 0, french: 1, german: 2, mandarin: 3, spanish: 4},
   },
   {
     year: 2011,
@@ -155,7 +155,7 @@ export const Data = [
       german: 276,
       mandarin: 154,
     },
-    popularity: ['english', 'german', 'mandarin', 'french', 'spanish'],
+    popularity: {english: 0, german: 1, mandarin: 2, french: 3, spanish: 4},
   },
   {
     year: 2011,
@@ -167,7 +167,7 @@ export const Data = [
       german: 241,
       mandarin: 110,
     },
-    popularity: ['english', 'spanish', 'german', 'mandarin', 'french'],
+    popularity: {english: 0, spanish: 1, german: 2, mandarin: 3, french: 4},
   },
   {
     year: 2011,
@@ -179,7 +179,7 @@ export const Data = [
       german: 156,
       mandarin: 300,
     },
-    popularity: ['english', 'mandarin', 'spanish', 'german', 'french'],
+    popularity: {english: 0, mandarin: 1, spanish: 2, german: 3, french: 4},
   },
   {
     year: 2011,
@@ -191,7 +191,7 @@ export const Data = [
       german: 225,
       mandarin: 195,
     },
-    popularity: ['english', 'german', 'mandarin', 'spanish', 'french'],
+    popularity: {english: 0, german: 1, mandarin: 2, spanish: 3, french: 4},
   },
   {
     year: 2011,
@@ -203,7 +203,7 @@ export const Data = [
       german: 290,
       mandarin: 267,
     },
-    popularity: ['english', 'german', 'mandarin', 'french', 'spanish'],
+    popularity: {english: 0, german: 1, mandarin: 2, french: 3, spanish: 4},
   },
   {
     year: 2011,
@@ -215,7 +215,7 @@ export const Data = [
       german: 274,
       mandarin: 209,
     },
-    popularity: ['english', 'german', 'mandarin', 'french', 'spanish'],
+    popularity: {english: 0, german: 1, mandarin: 2, french: 3, spanish: 4},
   },
   {
     year: 2011,
@@ -227,7 +227,7 @@ export const Data = [
       german: 270,
       mandarin: 70,
     },
-    popularity: ['english', 'german', 'spanish', 'french', 'mandarin'],
+    popularity: {english: 0, german: 1, spanish: 2, french: 3, mandarin: 4},
   },
   {
     year: 2011,
@@ -239,7 +239,7 @@ export const Data = [
       german: 201,
       mandarin: 75,
     },
-    popularity: ['english', 'spanish', 'german', 'french', 'mandarin'],
+    popularity: {english: 0, spanish: 1, german: 2, french: 3, mandarin: 4},
   },
   {
     year: 2011,
@@ -251,7 +251,7 @@ export const Data = [
       german: 46,
       mandarin: 138,
     },
-    popularity: ['english', 'french', 'spanish', 'mandarin', 'german'],
+    popularity: {english: 0, french: 1, spanish: 2, mandarin: 3, german: 4},
   },
   {
     year: 2011,
@@ -263,7 +263,7 @@ export const Data = [
       german: 235,
       mandarin: 16,
     },
-    popularity: ['english', 'german', 'spanish', 'french', 'mandarin'],
+    popularity: {english: 0, german: 1, spanish: 2, french: 3, mandarin: 4},
   },
   {
     year: 2011,
@@ -275,7 +275,7 @@ export const Data = [
       german: 168,
       mandarin: 289,
     },
-    popularity: ['english', 'mandarin', 'german', 'spanish', 'french'],
+    popularity: {english: 0, mandarin: 1, german: 2, spanish: 3, french: 4},
   },
   {
     year: 2011,
@@ -287,7 +287,7 @@ export const Data = [
       german: 198,
       mandarin: 228,
     },
-    popularity: ['spanish', 'english', 'mandarin', 'german', 'french'],
+    popularity: {spanish: 0, english: 1, mandarin: 2, german: 3, french: 4},
   },
   {
     year: 2012,
@@ -299,7 +299,7 @@ export const Data = [
       german: 66,
       mandarin: 51,
     },
-    popularity: ['english', 'french', 'spanish', 'german', 'mandarin'],
+    popularity: {english: 0, french: 1, spanish: 2, german: 3, mandarin: 4},
   },
   {
     year: 2012,
@@ -311,7 +311,7 @@ export const Data = [
       german: 1,
       mandarin: 33,
     },
-    popularity: ['french', 'spanish', 'english', 'mandarin', 'german'],
+    popularity: {french: 0, spanish: 1, english: 2, mandarin: 3, german: 4},
   },
   {
     year: 2012,
@@ -323,7 +323,7 @@ export const Data = [
       german: 256,
       mandarin: 127,
     },
-    popularity: ['french', 'german', 'mandarin', 'spanish', 'english'],
+    popularity: {french: 0, german: 1, mandarin: 2, spanish: 3, english: 4},
   },
   {
     year: 2012,
@@ -335,7 +335,7 @@ export const Data = [
       german: 46,
       mandarin: 107,
     },
-    popularity: ['spanish', 'english', 'french', 'mandarin', 'german'],
+    popularity: {spanish: 0, english: 1, french: 2, mandarin: 3, german: 4},
   },
   {
     year: 2012,
@@ -347,7 +347,7 @@ export const Data = [
       german: 69,
       mandarin: 85,
     },
-    popularity: ['spanish', 'french', 'english', 'mandarin', 'german'],
+    popularity: {spanish: 0, french: 1, english: 2, mandarin: 3, german: 4},
   },
   {
     year: 2012,
@@ -359,7 +359,7 @@ export const Data = [
       german: 90,
       mandarin: 101,
     },
-    popularity: ['english', 'french', 'spanish', 'mandarin', 'german'],
+    popularity: {english: 0, french: 1, spanish: 2, mandarin: 3, german: 4},
   },
   {
     year: 2012,
@@ -371,7 +371,7 @@ export const Data = [
       german: 15,
       mandarin: 133,
     },
-    popularity: ['french', 'mandarin', 'spanish', 'english', 'german'],
+    popularity: {french: 0, mandarin: 1, spanish: 2, english: 3, german: 4},
   },
   {
     year: 2012,
@@ -383,7 +383,7 @@ export const Data = [
       german: 163,
       mandarin: 1,
     },
-    popularity: ['german', 'spanish', 'english', 'french', 'mandarin'],
+    popularity: {german: 0, spanish: 1, english: 2, french: 3, mandarin: 4},
   },
   {
     year: 2012,
@@ -395,7 +395,7 @@ export const Data = [
       german: 113,
       mandarin: 284,
     },
-    popularity: ['mandarin', 'spanish', 'french', 'german', 'english'],
+    popularity: {mandarin: 0, spanish: 1, french: 2, german: 3, english: 4},
   },
   {
     year: 2012,
@@ -407,7 +407,7 @@ export const Data = [
       german: 279,
       mandarin: 60,
     },
-    popularity: ['german', 'french', 'mandarin', 'spanish', 'english'],
+    popularity: {german: 0, french: 1, mandarin: 2, spanish: 3, english: 4},
   },
   {
     year: 2012,
@@ -419,7 +419,7 @@ export const Data = [
       german: 209,
       mandarin: 174,
     },
-    popularity: ['german', 'english', 'mandarin', 'spanish', 'french'],
+    popularity: {german: 0, english: 1, mandarin: 2, spanish: 3, french: 4},
   },
   {
     year: 2012,
@@ -431,7 +431,7 @@ export const Data = [
       german: 179,
       mandarin: 202,
     },
-    popularity: ['spanish', 'english', 'mandarin', 'german', 'french'],
+    popularity: {spanish: 0, english: 1, mandarin: 2, german: 3, french: 4},
   },
   {
     year: 2013,
@@ -443,7 +443,7 @@ export const Data = [
       german: 222,
       mandarin: 134,
     },
-    popularity: ['french', 'german', 'spanish', 'mandarin', 'english'],
+    popularity: {french: 0, german: 1, spanish: 2, mandarin: 3, english: 4},
   },
   {
     year: 2013,
@@ -455,7 +455,7 @@ export const Data = [
       german: 153,
       mandarin: 229,
     },
-    popularity: ['mandarin', 'spanish', 'english', 'german', 'french'],
+    popularity: {mandarin: 0, spanish: 1, english: 2, german: 3, french: 4},
   },
   {
     year: 2013,
@@ -467,7 +467,7 @@ export const Data = [
       german: 174,
       mandarin: 292,
     },
-    popularity: ['mandarin', 'german', 'french', 'english', 'spanish'],
+    popularity: {mandarin: 0, german: 1, french: 2, english: 3, spanish: 4},
   },
   {
     year: 2013,
@@ -479,7 +479,7 @@ export const Data = [
       german: 255,
       mandarin: 248,
     },
-    popularity: ['german', 'mandarin', 'french', 'english', 'spanish'],
+    popularity: {german: 0, mandarin: 1, french: 2, english: 3, spanish: 4},
   },
   {
     year: 2013,
@@ -491,7 +491,7 @@ export const Data = [
       german: 1,
       mandarin: 196,
     },
-    popularity: ['spanish', 'mandarin', 'french', 'english', 'german'],
+    popularity: {spanish: 0, mandarin: 1, french: 2, english: 3, german: 4},
   },
   {
     year: 2013,
@@ -503,7 +503,7 @@ export const Data = [
       german: 116,
       mandarin: 153,
     },
-    popularity: ['french', 'spanish', 'mandarin', 'german', 'english'],
+    popularity: {french: 0, spanish: 1, mandarin: 2, german: 3, english: 4},
   },
   {
     year: 2013,
@@ -515,7 +515,7 @@ export const Data = [
       german: 87,
       mandarin: 294,
     },
-    popularity: ['mandarin', 'french', 'german', 'english', 'spanish'],
+    popularity: {mandarin: 0, french: 1, german: 2, english: 3, spanish: 4},
   },
   {
     year: 2013,
@@ -527,7 +527,7 @@ export const Data = [
       german: 98,
       mandarin: 118,
     },
-    popularity: ['spanish', 'mandarin', 'german', 'french', 'english'],
+    popularity: {spanish: 0, mandarin: 1, german: 2, french: 3, english: 4},
   },
   {
     year: 2013,
@@ -539,7 +539,7 @@ export const Data = [
       german: 162,
       mandarin: 77,
     },
-    popularity: ['german', 'spanish', 'english', 'mandarin', 'french'],
+    popularity: {german: 0, spanish: 1, english: 2, mandarin: 3, french: 4},
   },
   {
     year: 2013,
@@ -551,7 +551,7 @@ export const Data = [
       german: 118,
       mandarin: 70,
     },
-    popularity: ['french', 'spanish', 'german', 'mandarin', 'english'],
+    popularity: {french: 0, spanish: 1, german: 2, mandarin: 3, english: 4},
   },
   {
     year: 2013,
@@ -563,7 +563,7 @@ export const Data = [
       german: 84,
       mandarin: 277,
     },
-    popularity: ['mandarin', 'french', 'spanish', 'german', 'english'],
+    popularity: {mandarin: 0, french: 1, spanish: 2, german: 3, english: 4},
   },
   {
     year: 2013,
@@ -575,7 +575,7 @@ export const Data = [
       german: 98,
       mandarin: 222,
     },
-    popularity: ['mandarin', 'french', 'german', 'english', 'spanish'],
+    popularity: {mandarin: 0, french: 1, german: 2, english: 3, spanish: 4},
   },
   {
     year: 2014,
@@ -587,7 +587,7 @@ export const Data = [
       german: 50,
       mandarin: 133,
     },
-    popularity: ['french', 'english', 'spanish', 'mandarin', 'german'],
+    popularity: {french: 0, english: 1, spanish: 2, mandarin: 3, german: 4},
   },
   {
     year: 2014,
@@ -599,7 +599,7 @@ export const Data = [
       german: 238,
       mandarin: 140,
     },
-    popularity: ['english', 'french', 'german', 'spanish', 'mandarin'],
+    popularity: {english: 0, french: 1, german: 2, spanish: 3, mandarin: 4},
   },
   {
     year: 2014,
@@ -611,7 +611,7 @@ export const Data = [
       german: 20,
       mandarin: 55,
     },
-    popularity: ['english', 'french', 'spanish', 'mandarin', 'german'],
+    popularity: {english: 0, french: 1, spanish: 2, mandarin: 3, german: 4},
   },
   {
     year: 2014,
@@ -623,7 +623,7 @@ export const Data = [
       german: 135,
       mandarin: 135,
     },
-    popularity: ['french', 'spanish', 'german', 'mandarin', 'english'],
+    popularity: {french: 0, spanish: 1, german: 2, mandarin: 3, english: 4},
   },
   {
     year: 2014,
@@ -635,7 +635,7 @@ export const Data = [
       german: 165,
       mandarin: 6,
     },
-    popularity: ['french', 'spanish', 'german', 'english', 'mandarin'],
+    popularity: {french: 0, spanish: 1, german: 2, english: 3, mandarin: 4},
   },
   {
     year: 2014,
@@ -647,7 +647,7 @@ export const Data = [
       german: 115,
       mandarin: 270,
     },
-    popularity: ['mandarin', 'spanish', 'german', 'french', 'english'],
+    popularity: {mandarin: 0, spanish: 1, german: 2, french: 3, english: 4},
   },
   {
     year: 2014,
@@ -659,7 +659,7 @@ export const Data = [
       german: 15,
       mandarin: 244,
     },
-    popularity: ['french', 'mandarin', 'english', 'spanish', 'german'],
+    popularity: {french: 0, mandarin: 1, english: 2, spanish: 3, german: 4},
   },
   {
     year: 2014,
@@ -671,13 +671,13 @@ export const Data = [
       german: 195,
       mandarin: 23,
     },
-    popularity: ['german', 'english', 'french', 'spanish', 'mandarin'],
+    popularity: {german: 0, english: 1, french: 2, spanish: 3, mandarin: 4},
   },
   {
     year: 2014,
     month: 9,
     languages: {english: 183, spanish: 7, french: 21, german: 3, mandarin: 97},
-    popularity: ['english', 'mandarin', 'french', 'spanish', 'german'],
+    popularity: {english: 0, mandarin: 1, french: 2, spanish: 3, german: 4},
   },
   {
     year: 2014,
@@ -689,7 +689,7 @@ export const Data = [
       german: 146,
       mandarin: 179,
     },
-    popularity: ['english', 'mandarin', 'german', 'french', 'spanish'],
+    popularity: {english: 0, mandarin: 1, german: 2, french: 3, spanish: 4},
   },
   {
     year: 2014,
@@ -701,7 +701,7 @@ export const Data = [
       german: 282,
       mandarin: 258,
     },
-    popularity: ['german', 'mandarin', 'english', 'french', 'spanish'],
+    popularity: {german: 0, mandarin: 1, english: 2, french: 3, spanish: 4},
   },
   {
     year: 2014,
@@ -713,7 +713,7 @@ export const Data = [
       german: 3,
       mandarin: 175,
     },
-    popularity: ['english', 'spanish', 'mandarin', 'french', 'german'],
+    popularity: {english: 0, spanish: 1, mandarin: 2, french: 3, german: 4},
   },
   {
     year: 2015,
@@ -725,7 +725,7 @@ export const Data = [
       german: 239,
       mandarin: 280,
     },
-    popularity: ['mandarin', 'german', 'english', 'spanish', 'french'],
+    popularity: {mandarin: 0, german: 1, english: 2, spanish: 3, french: 4},
   },
   {
     year: 2015,
@@ -737,7 +737,7 @@ export const Data = [
       german: 103,
       mandarin: 235,
     },
-    popularity: ['french', 'mandarin', 'english', 'german', 'spanish'],
+    popularity: {french: 0, mandarin: 1, english: 2, german: 3, spanish: 4},
   },
   {
     year: 2015,
@@ -749,7 +749,7 @@ export const Data = [
       german: 144,
       mandarin: 190,
     },
-    popularity: ['mandarin', 'german', 'french', 'spanish', 'english'],
+    popularity: {mandarin: 0, german: 1, french: 2, spanish: 3, english: 4},
   },
   {
     year: 2015,
@@ -761,7 +761,7 @@ export const Data = [
       german: 215,
       mandarin: 85,
     },
-    popularity: ['german', 'french', 'english', 'mandarin', 'spanish'],
+    popularity: {german: 0, french: 1, english: 2, mandarin: 3, spanish: 4},
   },
   {
     year: 2015,
@@ -773,7 +773,7 @@ export const Data = [
       german: 122,
       mandarin: 228,
     },
-    popularity: ['english', 'mandarin', 'french', 'spanish', 'german'],
+    popularity: {english: 0, mandarin: 1, french: 2, spanish: 3, german: 4},
   },
   {
     year: 2015,
@@ -785,7 +785,7 @@ export const Data = [
       german: 281,
       mandarin: 270,
     },
-    popularity: ['german', 'mandarin', 'spanish', 'english', 'french'],
+    popularity: {german: 0, mandarin: 1, spanish: 2, english: 3, french: 4},
   },
   {
     year: 2015,
@@ -797,7 +797,7 @@ export const Data = [
       german: 104,
       mandarin: 253,
     },
-    popularity: ['spanish', 'mandarin', 'english', 'german', 'french'],
+    popularity: {spanish: 0, mandarin: 1, english: 2, german: 3, french: 4},
   },
   {
     year: 2015,
@@ -809,7 +809,7 @@ export const Data = [
       german: 251,
       mandarin: 217,
     },
-    popularity: ['german', 'mandarin', 'spanish', 'french', 'english'],
+    popularity: {german: 0, mandarin: 1, spanish: 2, french: 3, english: 4},
   },
   {
     year: 2015,
@@ -821,7 +821,7 @@ export const Data = [
       german: 203,
       mandarin: 152,
     },
-    popularity: ['german', 'mandarin', 'french', 'spanish', 'english'],
+    popularity: {german: 0, mandarin: 1, french: 2, spanish: 3, english: 4},
   },
   {
     year: 2015,
@@ -833,7 +833,7 @@ export const Data = [
       german: 108,
       mandarin: 182,
     },
-    popularity: ['english', 'mandarin', 'german', 'spanish', 'french'],
+    popularity: {english: 0, mandarin: 1, german: 2, spanish: 3, french: 4},
   },
   {
     year: 2015,
@@ -845,7 +845,7 @@ export const Data = [
       german: 43,
       mandarin: 215,
     },
-    popularity: ['mandarin', 'french', 'english', 'spanish', 'german'],
+    popularity: {mandarin: 0, french: 1, english: 2, spanish: 3, german: 4},
   },
   {
     year: 2015,
@@ -857,7 +857,7 @@ export const Data = [
       german: 89,
       mandarin: 297,
     },
-    popularity: ['mandarin', 'spanish', 'english', 'french', 'german'],
+    popularity: {mandarin: 0, spanish: 1, english: 2, french: 3, german: 4},
   },
   {
     year: 2016,
@@ -869,7 +869,7 @@ export const Data = [
       german: 146,
       mandarin: 106,
     },
-    popularity: ['english', 'spanish', 'french', 'german', 'mandarin'],
+    popularity: {english: 0, spanish: 1, french: 2, german: 3, mandarin: 4},
   },
   {
     year: 2016,
@@ -881,7 +881,7 @@ export const Data = [
       german: 197,
       mandarin: 9,
     },
-    popularity: ['english', 'spanish', 'german', 'french', 'mandarin'],
+    popularity: {english: 0, spanish: 1, german: 2, french: 3, mandarin: 4},
   },
   {
     year: 2016,
@@ -893,7 +893,7 @@ export const Data = [
       german: 95,
       mandarin: 150,
     },
-    popularity: ['french', 'mandarin', 'german', 'english', 'spanish'],
+    popularity: {french: 0, mandarin: 1, german: 2, english: 3, spanish: 4},
   },
   {
     year: 2016,
@@ -905,7 +905,7 @@ export const Data = [
       german: 261,
       mandarin: 252,
     },
-    popularity: ['french', 'german', 'mandarin', 'spanish', 'english'],
+    popularity: {french: 0, german: 1, mandarin: 2, spanish: 3, english: 4},
   },
   {
     year: 2016,
@@ -917,7 +917,7 @@ export const Data = [
       german: 75,
       mandarin: 108,
     },
-    popularity: ['english', 'french', 'mandarin', 'german', 'spanish'],
+    popularity: {english: 0, french: 1, mandarin: 2, german: 3, spanish: 4},
   },
   {
     year: 2016,
@@ -929,7 +929,7 @@ export const Data = [
       german: 173,
       mandarin: 252,
     },
-    popularity: ['mandarin', 'french', 'german', 'spanish', 'english'],
+    popularity: {mandarin: 0, french: 1, german: 2, spanish: 3, english: 4},
   },
   {
     year: 2016,
@@ -941,7 +941,7 @@ export const Data = [
       german: 177,
       mandarin: 20,
     },
-    popularity: ['spanish', 'french', 'english', 'german', 'mandarin'],
+    popularity: {spanish: 0, french: 1, english: 2, german: 3, mandarin: 4},
   },
   {
     year: 2016,
@@ -953,7 +953,7 @@ export const Data = [
       german: 284,
       mandarin: 156,
     },
-    popularity: ['german', 'mandarin', 'english', 'french', 'spanish'],
+    popularity: {german: 0, mandarin: 1, english: 2, french: 3, spanish: 4},
   },
   {
     year: 2016,
@@ -965,7 +965,7 @@ export const Data = [
       german: 209,
       mandarin: 142,
     },
-    popularity: ['spanish', 'french', 'english', 'german', 'mandarin'],
+    popularity: {spanish: 0, french: 1, english: 2, german: 3, mandarin: 4},
   },
   {
     year: 2016,
@@ -977,7 +977,7 @@ export const Data = [
       german: 232,
       mandarin: 158,
     },
-    popularity: ['german', 'french', 'english', 'spanish', 'mandarin'],
+    popularity: {german: 0, french: 1, english: 2, spanish: 3, mandarin: 4},
   },
   {
     year: 2016,
@@ -989,7 +989,7 @@ export const Data = [
       german: 276,
       mandarin: 5,
     },
-    popularity: ['german', 'french', 'spanish', 'english', 'mandarin'],
+    popularity: {german: 0, french: 1, spanish: 2, english: 3, mandarin: 4},
   },
   {
     year: 2016,
@@ -1001,7 +1001,7 @@ export const Data = [
       german: 182,
       mandarin: 53,
     },
-    popularity: ['spanish', 'french', 'german', 'english', 'mandarin'],
+    popularity: {spanish: 0, french: 1, german: 2, english: 3, mandarin: 4},
   },
   {
     year: 2017,
@@ -1013,7 +1013,7 @@ export const Data = [
       german: 85,
       mandarin: 23,
     },
-    popularity: ['french', 'german', 'english', 'spanish', 'mandarin'],
+    popularity: {french: 0, german: 1, english: 2, spanish: 3, mandarin: 4},
   },
   {
     year: 2017,
@@ -1025,7 +1025,7 @@ export const Data = [
       german: 175,
       mandarin: 224,
     },
-    popularity: ['mandarin', 'french', 'german', 'spanish', 'english'],
+    popularity: {mandarin: 0, french: 1, german: 2, spanish: 3, english: 4},
   },
   {
     year: 2017,
@@ -1037,7 +1037,7 @@ export const Data = [
       german: 74,
       mandarin: 86,
     },
-    popularity: ['french', 'english', 'mandarin', 'german', 'spanish'],
+    popularity: {french: 0, english: 1, mandarin: 2, german: 3, spanish: 4},
   },
   {
     year: 2017,
@@ -1049,7 +1049,7 @@ export const Data = [
       german: 299,
       mandarin: 67,
     },
-    popularity: ['german', 'french', 'spanish', 'mandarin', 'english'],
+    popularity: {german: 0, french: 1, spanish: 2, mandarin: 3, english: 4},
   },
   {
     year: 2017,
@@ -1061,7 +1061,7 @@ export const Data = [
       german: 155,
       mandarin: 75,
     },
-    popularity: ['english', 'spanish', 'german', 'french', 'mandarin'],
+    popularity: {english: 0, spanish: 1, german: 2, french: 3, mandarin: 4},
   },
   {
     year: 2017,
@@ -1073,7 +1073,7 @@ export const Data = [
       german: 143,
       mandarin: 207,
     },
-    popularity: ['english', 'spanish', 'mandarin', 'french', 'german'],
+    popularity: {english: 0, spanish: 1, mandarin: 2, french: 3, german: 4},
   },
   {
     year: 2017,
@@ -1085,7 +1085,7 @@ export const Data = [
       german: 144,
       mandarin: 245,
     },
-    popularity: ['mandarin', 'english', 'spanish', 'german', 'french'],
+    popularity: {mandarin: 0, english: 1, spanish: 2, german: 3, french: 4},
   },
   {
     year: 2017,
@@ -1097,7 +1097,7 @@ export const Data = [
       german: 29,
       mandarin: 81,
     },
-    popularity: ['spanish', 'english', 'mandarin', 'french', 'german'],
+    popularity: {spanish: 0, english: 1, mandarin: 2, french: 3, german: 4},
   },
   {
     year: 2017,
@@ -1109,7 +1109,7 @@ export const Data = [
       german: 171,
       mandarin: 248,
     },
-    popularity: ['english', 'mandarin', 'german', 'french', 'spanish'],
+    popularity: {english: 0, mandarin: 1, german: 2, french: 3, spanish: 4},
   },
   {
     year: 2017,
@@ -1121,7 +1121,7 @@ export const Data = [
       german: 102,
       mandarin: 135,
     },
-    popularity: ['english', 'mandarin', 'spanish', 'german', 'french'],
+    popularity: {english: 0, mandarin: 1, spanish: 2, german: 3, french: 4},
   },
   {
     year: 2017,
@@ -1133,7 +1133,7 @@ export const Data = [
       german: 164,
       mandarin: 229,
     },
-    popularity: ['mandarin', 'german', 'spanish', 'english', 'french'],
+    popularity: {mandarin: 0, german: 1, spanish: 2, english: 3, french: 4},
   },
   {
     year: 2017,
@@ -1145,7 +1145,7 @@ export const Data = [
       german: 27,
       mandarin: 65,
     },
-    popularity: ['french', 'english', 'mandarin', 'spanish', 'german'],
+    popularity: {french: 0, english: 1, mandarin: 2, spanish: 3, german: 4},
   },
   {
     year: 2018,
@@ -1157,7 +1157,7 @@ export const Data = [
       german: 164,
       mandarin: 37,
     },
-    popularity: ['spanish', 'german', 'french', 'english', 'mandarin'],
+    popularity: {spanish: 0, german: 1, french: 2, english: 3, mandarin: 4},
   },
   {
     year: 2018,
@@ -1169,13 +1169,13 @@ export const Data = [
       german: 46,
       mandarin: 151,
     },
-    popularity: ['english', 'spanish', 'mandarin', 'german', 'french'],
+    popularity: {english: 0, spanish: 1, mandarin: 2, german: 3, french: 4},
   },
   {
     year: 2018,
     month: 3,
     languages: {english: 282, spanish: 43, french: 77, german: 40, mandarin: 9},
-    popularity: ['english', 'french', 'spanish', 'german', 'mandarin'],
+    popularity: {english: 0, french: 1, spanish: 2, german: 3, mandarin: 4},
   },
   {
     year: 2018,
@@ -1187,7 +1187,7 @@ export const Data = [
       german: 96,
       mandarin: 227,
     },
-    popularity: ['mandarin', 'spanish', 'german', 'english', 'french'],
+    popularity: {mandarin: 0, spanish: 1, german: 2, english: 3, french: 4},
   },
   {
     year: 2018,
@@ -1199,7 +1199,7 @@ export const Data = [
       german: 91,
       mandarin: 191,
     },
-    popularity: ['french', 'mandarin', 'spanish', 'german', 'english'],
+    popularity: {french: 0, mandarin: 1, spanish: 2, german: 3, english: 4},
   },
   {
     year: 2018,
@@ -1211,7 +1211,7 @@ export const Data = [
       german: 124,
       mandarin: 8,
     },
-    popularity: ['english', 'german', 'french', 'mandarin', 'spanish'],
+    popularity: {english: 0, german: 1, french: 2, mandarin: 3, spanish: 4},
   },
   {
     year: 2018,
@@ -1223,7 +1223,7 @@ export const Data = [
       german: 224,
       mandarin: 191,
     },
-    popularity: ['english', 'german', 'mandarin', 'french', 'spanish'],
+    popularity: {english: 0, german: 1, mandarin: 2, french: 3, spanish: 4},
   },
   {
     year: 2018,
@@ -1235,7 +1235,7 @@ export const Data = [
       german: 273,
       mandarin: 146,
     },
-    popularity: ['german', 'english', 'mandarin', 'french', 'spanish'],
+    popularity: {german: 0, english: 1, mandarin: 2, french: 3, spanish: 4},
   },
   {
     year: 2018,
@@ -1247,7 +1247,7 @@ export const Data = [
       german: 283,
       mandarin: 78,
     },
-    popularity: ['german', 'english', 'french', 'mandarin', 'spanish'],
+    popularity: {german: 0, english: 1, french: 2, mandarin: 3, spanish: 4},
   },
   {
     year: 2018,
@@ -1259,7 +1259,7 @@ export const Data = [
       german: 208,
       mandarin: 45,
     },
-    popularity: ['french', 'german', 'spanish', 'english', 'mandarin'],
+    popularity: {french: 0, german: 1, spanish: 2, english: 3, mandarin: 4},
   },
   {
     year: 2018,
@@ -1271,7 +1271,7 @@ export const Data = [
       german: 66,
       mandarin: 44,
     },
-    popularity: ['english', 'french', 'spanish', 'german', 'mandarin'],
+    popularity: {english: 0, french: 1, spanish: 2, german: 3, mandarin: 4},
   },
   {
     year: 2018,
@@ -1283,7 +1283,7 @@ export const Data = [
       german: 256,
       mandarin: 243,
     },
-    popularity: ['german', 'mandarin', 'spanish', 'english', 'french'],
+    popularity: {german: 0, mandarin: 1, spanish: 2, english: 3, french: 4},
   },
   {
     year: 2019,
@@ -1295,7 +1295,7 @@ export const Data = [
       german: 281,
       mandarin: 160,
     },
-    popularity: ['german', 'mandarin', 'spanish', 'french', 'english'],
+    popularity: {german: 0, mandarin: 1, spanish: 2, french: 3, english: 4},
   },
   {
     year: 2019,
@@ -1307,7 +1307,7 @@ export const Data = [
       german: 20,
       mandarin: 131,
     },
-    popularity: ['english', 'french', 'spanish', 'mandarin', 'german'],
+    popularity: {english: 0, french: 1, spanish: 2, mandarin: 3, german: 4},
   },
   {
     year: 2019,
@@ -1319,7 +1319,7 @@ export const Data = [
       german: 56,
       mandarin: 280,
     },
-    popularity: ['mandarin', 'english', 'spanish', 'german', 'french'],
+    popularity: {mandarin: 0, english: 1, spanish: 2, german: 3, french: 4},
   },
   {
     year: 2019,
@@ -1331,7 +1331,7 @@ export const Data = [
       german: 230,
       mandarin: 114,
     },
-    popularity: ['german', 'french', 'spanish', 'mandarin', 'english'],
+    popularity: {german: 0, french: 1, spanish: 2, mandarin: 3, english: 4},
   },
   {
     year: 2019,
@@ -1343,7 +1343,7 @@ export const Data = [
       german: 191,
       mandarin: 102,
     },
-    popularity: ['french', 'spanish', 'german', 'mandarin', 'english'],
+    popularity: {french: 0, spanish: 1, german: 2, mandarin: 3, english: 4},
   },
   {
     year: 2019,
@@ -1355,13 +1355,13 @@ export const Data = [
       german: 234,
       mandarin: 167,
     },
-    popularity: ['french', 'german', 'english', 'mandarin', 'spanish'],
+    popularity: {french: 0, german: 1, english: 2, mandarin: 3, spanish: 4},
   },
   {
     year: 2019,
     month: 7,
     languages: {english: 277, spanish: 19, french: 26, german: 51, mandarin: 6},
-    popularity: ['english', 'german', 'french', 'spanish', 'mandarin'],
+    popularity: {english: 0, german: 1, french: 2, spanish: 3, mandarin: 4},
   },
   {
     year: 2019,
@@ -1373,7 +1373,7 @@ export const Data = [
       german: 114,
       mandarin: 252,
     },
-    popularity: ['mandarin', 'english', 'spanish', 'german', 'french'],
+    popularity: {mandarin: 0, english: 1, spanish: 2, german: 3, french: 4},
   },
   {
     year: 2019,
@@ -1385,7 +1385,7 @@ export const Data = [
       german: 39,
       mandarin: 282,
     },
-    popularity: ['mandarin', 'english', 'spanish', 'french', 'german'],
+    popularity: {mandarin: 0, english: 1, spanish: 2, french: 3, german: 4},
   },
   {
     year: 2019,
@@ -1397,7 +1397,7 @@ export const Data = [
       german: 216,
       mandarin: 185,
     },
-    popularity: ['french', 'german', 'mandarin', 'english', 'spanish'],
+    popularity: {french: 0, german: 1, mandarin: 2, english: 3, spanish: 4},
   },
   {
     year: 2019,
@@ -1409,7 +1409,7 @@ export const Data = [
       german: 63,
       mandarin: 204,
     },
-    popularity: ['mandarin', 'spanish', 'english', 'german', 'french'],
+    popularity: {mandarin: 0, spanish: 1, english: 2, german: 3, french: 4},
   },
   {
     year: 2019,
@@ -1421,7 +1421,7 @@ export const Data = [
       german: 231,
       mandarin: 198,
     },
-    popularity: ['german', 'mandarin', 'english', 'spanish', 'french'],
+    popularity: {german: 0, mandarin: 1, english: 2, spanish: 3, french: 4},
   },
   {
     year: 2020,
@@ -1433,7 +1433,7 @@ export const Data = [
       german: 211,
       mandarin: 112,
     },
-    popularity: ['english', 'french', 'german', 'spanish', 'mandarin'],
+    popularity: {english: 0, french: 1, german: 2, spanish: 3, mandarin: 4},
   },
   {
     year: 2020,
@@ -1445,7 +1445,7 @@ export const Data = [
       german: 178,
       mandarin: 242,
     },
-    popularity: ['spanish', 'mandarin', 'german', 'french', 'english'],
+    popularity: {spanish: 0, mandarin: 1, german: 2, french: 3, english: 4},
   },
   {
     year: 2020,
@@ -1457,7 +1457,7 @@ export const Data = [
       german: 1,
       mandarin: 119,
     },
-    popularity: ['english', 'french', 'spanish', 'mandarin', 'german'],
+    popularity: {english: 0, french: 1, spanish: 2, mandarin: 3, german: 4},
   },
   {
     year: 2020,
@@ -1469,7 +1469,7 @@ export const Data = [
       german: 119,
       mandarin: 277,
     },
-    popularity: ['english', 'mandarin', 'spanish', 'german', 'french'],
+    popularity: {english: 0, mandarin: 1, spanish: 2, german: 3, french: 4},
   },
   {
     year: 2020,
@@ -1481,7 +1481,7 @@ export const Data = [
       german: 62,
       mandarin: 249,
     },
-    popularity: ['french', 'mandarin', 'english', 'german', 'spanish'],
+    popularity: {french: 0, mandarin: 1, english: 2, german: 3, spanish: 4},
   },
   {
     year: 2020,
@@ -1493,7 +1493,7 @@ export const Data = [
       german: 217,
       mandarin: 38,
     },
-    popularity: ['spanish', 'german', 'french', 'mandarin', 'english'],
+    popularity: {spanish: 0, german: 1, french: 2, mandarin: 3, english: 4},
   },
   {
     year: 2020,
@@ -1505,7 +1505,7 @@ export const Data = [
       german: 253,
       mandarin: 86,
     },
-    popularity: ['german', 'english', 'spanish', 'french', 'mandarin'],
+    popularity: {german: 0, english: 1, spanish: 2, french: 3, mandarin: 4},
   },
   {
     year: 2020,
@@ -1517,7 +1517,7 @@ export const Data = [
       german: 177,
       mandarin: 292,
     },
-    popularity: ['mandarin', 'spanish', 'french', 'english', 'german'],
+    popularity: {mandarin: 0, spanish: 1, french: 2, english: 3, german: 4},
   },
   {
     year: 2020,
@@ -1529,7 +1529,7 @@ export const Data = [
       german: 204,
       mandarin: 207,
     },
-    popularity: ['english', 'mandarin', 'german', 'spanish', 'french'],
+    popularity: {english: 0, mandarin: 1, german: 2, spanish: 3, french: 4},
   },
   {
     year: 2020,
@@ -1541,7 +1541,7 @@ export const Data = [
       german: 147,
       mandarin: 116,
     },
-    popularity: ['english', 'german', 'mandarin', 'french', 'spanish'],
+    popularity: {english: 0, german: 1, mandarin: 2, french: 3, spanish: 4},
   },
   {
     year: 2020,
@@ -1553,7 +1553,7 @@ export const Data = [
       german: 28,
       mandarin: 147,
     },
-    popularity: ['english', 'mandarin', 'french', 'spanish', 'german'],
+    popularity: {english: 0, mandarin: 1, french: 2, spanish: 3, german: 4},
   },
   {
     year: 2020,
@@ -1565,7 +1565,7 @@ export const Data = [
       german: 76,
       mandarin: 121,
     },
-    popularity: ['spanish', 'french', 'mandarin', 'german', 'english'],
+    popularity: {spanish: 0, french: 1, mandarin: 2, german: 3, english: 4},
   },
   {
     year: 2021,
@@ -1577,7 +1577,7 @@ export const Data = [
       german: 147,
       mandarin: 101,
     },
-    popularity: ['english', 'german', 'mandarin', 'french', 'spanish'],
+    popularity: {english: 0, german: 1, mandarin: 2, french: 3, spanish: 4},
   },
   {
     year: 2021,
@@ -1589,7 +1589,7 @@ export const Data = [
       german: 23,
       mandarin: 21,
     },
-    popularity: ['french', 'spanish', 'english', 'german', 'mandarin'],
+    popularity: {french: 0, spanish: 1, english: 2, german: 3, mandarin: 4},
   },
   {
     year: 2021,
@@ -1601,7 +1601,7 @@ export const Data = [
       german: 186,
       mandarin: 117,
     },
-    popularity: ['spanish', 'german', 'mandarin', 'english', 'french'],
+    popularity: {spanish: 0, german: 1, mandarin: 2, english: 3, french: 4},
   },
   {
     year: 2021,
@@ -1613,13 +1613,13 @@ export const Data = [
       german: 218,
       mandarin: 208,
     },
-    popularity: ['german', 'mandarin', 'english', 'spanish', 'french'],
+    popularity: {german: 0, mandarin: 1, english: 2, spanish: 3, french: 4},
   },
   {
     year: 2021,
     month: 5,
     languages: {english: 142, spanish: 4, french: 44, german: 44, mandarin: 8},
-    popularity: ['english', 'french', 'german', 'mandarin', 'spanish'],
+    popularity: {english: 0, french: 1, german: 2, mandarin: 3, spanish: 4},
   },
   {
     year: 2021,
@@ -1631,7 +1631,7 @@ export const Data = [
       german: 108,
       mandarin: 55,
     },
-    popularity: ['french', 'english', 'german', 'mandarin', 'spanish'],
+    popularity: {french: 0, english: 1, german: 2, mandarin: 3, spanish: 4},
   },
   {
     year: 2021,
@@ -1643,7 +1643,7 @@ export const Data = [
       german: 34,
       mandarin: 46,
     },
-    popularity: ['english', 'french', 'mandarin', 'spanish', 'german'],
+    popularity: {english: 0, french: 1, mandarin: 2, spanish: 3, german: 4},
   },
   {
     year: 2021,
@@ -1655,7 +1655,7 @@ export const Data = [
       german: 220,
       mandarin: 187,
     },
-    popularity: ['french', 'german', 'mandarin', 'spanish', 'english'],
+    popularity: {french: 0, german: 1, mandarin: 2, spanish: 3, english: 4},
   },
   {
     year: 2021,
@@ -1667,7 +1667,7 @@ export const Data = [
       german: 245,
       mandarin: 10,
     },
-    popularity: ['spanish', 'german', 'english', 'french', 'mandarin'],
+    popularity: {spanish: 0, german: 1, english: 2, french: 3, mandarin: 4},
   },
   {
     year: 2021,
@@ -1679,7 +1679,7 @@ export const Data = [
       german: 41,
       mandarin: 43,
     },
-    popularity: ['spanish', 'french', 'mandarin', 'german', 'english'],
+    popularity: {spanish: 0, french: 1, mandarin: 2, german: 3, english: 4},
   },
   {
     year: 2021,
@@ -1691,7 +1691,7 @@ export const Data = [
       german: 296,
       mandarin: 66,
     },
-    popularity: ['german', 'english', 'french', 'mandarin', 'spanish'],
+    popularity: {german: 0, english: 1, french: 2, mandarin: 3, spanish: 4},
   },
   {
     year: 2021,
@@ -1703,7 +1703,7 @@ export const Data = [
       german: 207,
       mandarin: 130,
     },
-    popularity: ['french', 'english', 'german', 'mandarin', 'spanish'],
+    popularity: {french: 0, english: 1, german: 2, mandarin: 3, spanish: 4},
   },
   {
     year: 2022,
@@ -1715,13 +1715,13 @@ export const Data = [
       german: 148,
       mandarin: 203,
     },
-    popularity: ['french', 'spanish', 'mandarin', 'german', 'english'],
+    popularity: {french: 0, spanish: 1, mandarin: 2, german: 3, english: 4},
   },
   {
     year: 2022,
     month: 2,
     languages: {english: 40, spanish: 3, french: 77, german: 58, mandarin: 36},
-    popularity: ['french', 'german', 'english', 'mandarin', 'spanish'],
+    popularity: {french: 0, german: 1, english: 2, mandarin: 3, spanish: 4},
   },
   {
     year: 2022,
@@ -1733,7 +1733,7 @@ export const Data = [
       german: 117,
       mandarin: 275,
     },
-    popularity: ['mandarin', 'spanish', 'english', 'french', 'german'],
+    popularity: {mandarin: 0, spanish: 1, english: 2, french: 3, german: 4},
   },
   {
     year: 2022,
@@ -1745,7 +1745,7 @@ export const Data = [
       german: 248,
       mandarin: 110,
     },
-    popularity: ['german', 'english', 'french', 'mandarin', 'spanish'],
+    popularity: {german: 0, english: 1, french: 2, mandarin: 3, spanish: 4},
   },
   {
     year: 2022,
@@ -1757,7 +1757,7 @@ export const Data = [
       german: 187,
       mandarin: 111,
     },
-    popularity: ['french', 'german', 'spanish', 'mandarin', 'english'],
+    popularity: {french: 0, german: 1, spanish: 2, mandarin: 3, english: 4},
   },
   {
     year: 2022,
@@ -1769,7 +1769,7 @@ export const Data = [
       german: 179,
       mandarin: 54,
     },
-    popularity: ['german', 'spanish', 'english', 'mandarin', 'french'],
+    popularity: {german: 0, spanish: 1, english: 2, mandarin: 3, french: 4},
   },
   {
     year: 2022,
@@ -1781,7 +1781,7 @@ export const Data = [
       german: 166,
       mandarin: 204,
     },
-    popularity: ['mandarin', 'german', 'spanish', 'french', 'english'],
+    popularity: {mandarin: 0, german: 1, spanish: 2, french: 3, english: 4},
   },
   {
     year: 2022,
@@ -1793,7 +1793,7 @@ export const Data = [
       german: 9,
       mandarin: 157,
     },
-    popularity: ['mandarin', 'english', 'french', 'spanish', 'german'],
+    popularity: {mandarin: 0, english: 1, french: 2, spanish: 3, german: 4},
   },
   {
     year: 2022,
@@ -1805,7 +1805,7 @@ export const Data = [
       german: 289,
       mandarin: 132,
     },
-    popularity: ['german', 'french', 'mandarin', 'spanish', 'english'],
+    popularity: {german: 0, french: 1, mandarin: 2, spanish: 3, english: 4},
   },
   {
     year: 2022,
@@ -1817,7 +1817,7 @@ export const Data = [
       german: 256,
       mandarin: 221,
     },
-    popularity: ['spanish', 'english', 'german', 'mandarin', 'french'],
+    popularity: {spanish: 0, english: 1, german: 2, mandarin: 3, french: 4},
   },
   {
     year: 2022,
@@ -1829,7 +1829,7 @@ export const Data = [
       german: 19,
       mandarin: 152,
     },
-    popularity: ['english', 'french', 'mandarin', 'spanish', 'german'],
+    popularity: {english: 0, french: 1, mandarin: 2, spanish: 3, german: 4},
   },
   {
     year: 2022,
@@ -1841,7 +1841,7 @@ export const Data = [
       german: 149,
       mandarin: 40,
     },
-    popularity: ['spanish', 'german', 'french', 'mandarin', 'english'],
+    popularity: {spanish: 0, german: 1, french: 2, mandarin: 3, english: 4},
   },
   {
     year: 2023,
@@ -1853,7 +1853,7 @@ export const Data = [
       german: 151,
       mandarin: 114,
     },
-    popularity: ['french', 'german', 'english', 'mandarin', 'spanish'],
+    popularity: {french: 0, german: 1, english: 2, mandarin: 3, spanish: 4},
   },
   {
     year: 2023,
@@ -1865,7 +1865,7 @@ export const Data = [
       german: 44,
       mandarin: 51,
     },
-    popularity: ['spanish', 'english', 'mandarin', 'german', 'french'],
+    popularity: {spanish: 0, english: 1, mandarin: 2, german: 3, french: 4},
   },
   {
     year: 2023,
@@ -1877,7 +1877,7 @@ export const Data = [
       german: 298,
       mandarin: 58,
     },
-    popularity: ['german', 'spanish', 'french', 'english', 'mandarin'],
+    popularity: {german: 0, spanish: 1, french: 2, english: 3, mandarin: 4},
   },
   {
     year: 2023,
@@ -1889,7 +1889,7 @@ export const Data = [
       german: 37,
       mandarin: 73,
     },
-    popularity: ['english', 'french', 'mandarin', 'german', 'spanish'],
+    popularity: {english: 0, french: 1, mandarin: 2, german: 3, spanish: 4},
   },
   {
     year: 2023,
@@ -1901,7 +1901,7 @@ export const Data = [
       german: 104,
       mandarin: 136,
     },
-    popularity: ['mandarin', 'french', 'spanish', 'german', 'english'],
+    popularity: {mandarin: 0, french: 1, spanish: 2, german: 3, english: 4},
   },
   {
     year: 2023,
@@ -1913,7 +1913,7 @@ export const Data = [
       german: 51,
       mandarin: 244,
     },
-    popularity: ['mandarin', 'spanish', 'german', 'french', 'english'],
+    popularity: {mandarin: 0, spanish: 1, german: 2, french: 3, english: 4},
   },
   {
     year: 2023,
@@ -1925,7 +1925,7 @@ export const Data = [
       german: 88,
       mandarin: 137,
     },
-    popularity: ['english', 'mandarin', 'german', 'spanish', 'french'],
+    popularity: {english: 0, mandarin: 1, german: 2, spanish: 3, french: 4},
   },
   {
     year: 2023,
@@ -1937,7 +1937,7 @@ export const Data = [
       german: 110,
       mandarin: 275,
     },
-    popularity: ['mandarin', 'french', 'english', 'spanish', 'german'],
+    popularity: {mandarin: 0, french: 1, english: 2, spanish: 3, german: 4},
   },
   {
     year: 2023,
@@ -1949,7 +1949,7 @@ export const Data = [
       german: 142,
       mandarin: 99,
     },
-    popularity: ['spanish', 'german', 'mandarin', 'english', 'french'],
+    popularity: {spanish: 0, german: 1, mandarin: 2, english: 3, french: 4},
   },
   {
     year: 2023,
@@ -1961,7 +1961,7 @@ export const Data = [
       german: 35,
       mandarin: 158,
     },
-    popularity: ['mandarin', 'french', 'english', 'spanish', 'german'],
+    popularity: {mandarin: 0, french: 1, english: 2, spanish: 3, german: 4},
   },
   {
     year: 2023,
@@ -1973,7 +1973,7 @@ export const Data = [
       german: 95,
       mandarin: 52,
     },
-    popularity: ['english', 'french', 'spanish', 'german', 'mandarin'],
+    popularity: {english: 0, french: 1, spanish: 2, german: 3, mandarin: 4},
   },
   {
     year: 2023,
@@ -1985,7 +1985,7 @@ export const Data = [
       german: 83,
       mandarin: 279,
     },
-    popularity: ['english', 'mandarin', 'french', 'german', 'spanish'],
+    popularity: {english: 0, mandarin: 1, french: 2, german: 3, spanish: 4},
   },
 ];
 

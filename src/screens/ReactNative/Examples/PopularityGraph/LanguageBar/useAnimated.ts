@@ -18,7 +18,7 @@ export default function useAnimated(
   const position = useDerivedValue(() => {
     const popularity = Data[Math.round(animated.value)].popularity;
 
-    return popularity.indexOf(language) ?? 0;
+    return popularity[language] ?? 0;
   });
 
   const textValue = useAnimatedProps(() => {
