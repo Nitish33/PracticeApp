@@ -5,6 +5,7 @@ import Animated, {SharedValue} from 'react-native-reanimated';
 import Styles from './styles';
 import useAnimated from './useAnimated';
 import {LanguageOption} from '../PopularityData';
+import ReanimatedText from '../../../../../Components/ReanimatedText/ReanimatedText';
 
 const AnimatedTextInput = Animated.createAnimatedComponent(TextInput);
 
@@ -30,11 +31,7 @@ export default function LanguageBar(props: ILanguageBarProps) {
       key={props.index}
       style={[Styles.containerStyle, containerAnimatedStyle]}>
       <Animated.View style={ViewStyle} />
-      <AnimatedTextInput
-        animatedProps={textValue}
-        editable={false}
-        style={{color: 'black'}}
-      />
+      <ReanimatedText value={rating} />
     </Animated.View>
   );
 }

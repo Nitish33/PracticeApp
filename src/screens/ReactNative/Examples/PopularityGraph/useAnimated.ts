@@ -18,18 +18,23 @@ export default function useAnimated() {
     return Data[Math.round(yearAnimated.value)];
   });
 
-  useEffect(() => {
+  const monthAndYear = useDerivedValue(() => {
+    return `${animatedIndex.value.month}/${animatedIndex.value.year}`;
+  });
+
+  const startAnimation = () => {
     yearAnimated.value = withRepeat(
       withTiming(MAX_DURATION, {
         duration: MAX_DURATION * 2000,
         easing: Easing.linear,
       }),
     );
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  };
 
   return {
+    monthAndYear,
     yearAnimated,
+    startAnimation,
     parentWidthAnimated,
     animatedIndex,
   };

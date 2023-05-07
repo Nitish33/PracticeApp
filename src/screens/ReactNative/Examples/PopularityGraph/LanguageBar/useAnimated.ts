@@ -5,33 +5,20 @@ import {
   useDerivedValue,
   withTiming,
 } from 'react-native-reanimated';
-import {Data, Languages, LanguageOption} from '../PopularityData';
+import {Data, LanguageOption, Colors} from '../PopularityData';
 
 export default function useAnimated(
   animated: SharedValue<number>,
   language: LanguageOption,
-  index: number,
 ) {
   const rating = useDerivedValue(() => {
     return Data[Math.round(animated.value)].languages[language];
   }, []);
 
   const position = useDerivedValue(() => {
-    let pos = Languages.length - 1;
+    const popularity = Data[Math.round(animated.value)].popularity;
 
-    const allLang = Data[Math.round(animated.value)].languages;
-
-    for (const key in allLang) {
-      if (key === language) {
-        continue;
-      }
-
-      if (allLang[key as LanguageOption] < allLang[language]) {
-        --pos;
-      }
-    }
-
-    return pos;
+    return popularity.indexOf(language) ?? 0;
   });
 
   const textValue = useAnimatedProps(() => {
@@ -42,8 +29,7 @@ export default function useAnimated(
 
   const ViewStyle = useAnimatedStyle(() => {
     return {
-      backgroundColor: 'red',
-
+      backgroundColor: Colors[language],
       width: withTiming(rating.value ?? 0, {duration: 1000}),
     };
   }, []);
@@ -51,7 +37,7 @@ export default function useAnimated(
   const containerAnimatedStyle = useAnimatedStyle(() => {
     return {
       transform: [
-        {translateY: withTiming(50 * position.value, {duration: 1000})},
+        {translateY: withTiming(50 * position.value, {duration: 1500})},
       ],
       position: 'absolute',
       left: 0,
