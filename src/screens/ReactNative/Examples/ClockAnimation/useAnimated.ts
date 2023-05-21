@@ -19,8 +19,8 @@ export default function useAnimated() {
 
   const runAnimation = () => {
     animated.value = withTiming(
-      120,
-      {duration: 20 * 1000, easing: Easing.linear},
+      60,
+      {duration: 60 * 1000, easing: Easing.linear},
       () => {
         runOnJS(updateMinAsync)();
       },
