@@ -8,6 +8,7 @@ import Antman from './Examples/Antman/Antman';
 import DarkMode from './Examples/DarkMode/DarkMode';
 import PopularityGraph from './Examples/PopularityGraph/PopularityGraph';
 import PizzaAnimation from './Examples/PizzaAnimation/PizzaAnimation';
+import ClockAnimation from './Examples/ClockAnimation/ClockAnimation';
 
 export const ExampleList: Array<OptionType> = [
   {key: ScreenName.RNGap, label: 'Gap', component: GapExample},
@@ -39,6 +40,12 @@ export const ExampleList: Array<OptionType> = [
     key: ScreenName.PizzaAnimation,
     label: 'Pizza Animation',
     component: PizzaAnimation,
+  },
+
+  {
+    key: ScreenName.PixelClockAnimation,
+    label: 'Clock Animation',
+    component: ClockAnimation,
   },
 ];
 

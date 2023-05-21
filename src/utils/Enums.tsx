@@ -15,6 +15,7 @@ export enum ScreenName {
   DarkModeToggle = 'DarkModeToggle',
   PopularityGraph = 'PopularityGraph',
   PizzaAnimation = 'PizzaAnimation',
+  PixelClockAnimation = 'PixelClockAnimation',
 
   // Carousal
   RNCarousal = 'RNCarousal',
