@@ -32,4 +32,9 @@ export enum ScreenName {
   // Tutorial
   Tutorial = 'Tutorial',
   TParallex = 'TParallex',
+
+  // Skia
+  Skia = 'Skia',
+  SkiaBasic = 'SkiaBasic',
+  SkiaMeatBall = 'SkiaMeatball',
 }

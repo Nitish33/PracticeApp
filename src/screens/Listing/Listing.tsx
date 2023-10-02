@@ -8,6 +8,7 @@ import GestureHandlerExample from '../GestureHandlerExample/routes';
 import CarousalExample from '../Carousal/routes';
 import TutorialList from '../../../Tutorials/routes';
 import SVGList from '../Svg/routes';
+import Skia from '../Skia/routes';
 
 export const ExampleList: Array<OptionType> = [
   {
@@ -38,6 +39,8 @@ export const ExampleList: Array<OptionType> = [
     key: ScreenName.SVG,
     component: SVGList,
   },
+
+  {label: 'Skia', key: ScreenName.Skia, component: Skia},
 ];
 
 export default function Listing() {
