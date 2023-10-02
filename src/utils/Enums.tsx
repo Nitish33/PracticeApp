@@ -37,4 +37,5 @@ export enum ScreenName {
   Skia = 'Skia',
   SkiaBasic = 'SkiaBasic',
   SkiaMeatBall = 'SkiaMeatball',
+  SkiaShader = 'SkiaShader',
 }
