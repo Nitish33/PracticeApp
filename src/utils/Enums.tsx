@@ -38,4 +38,8 @@ export enum ScreenName {
   SkiaBasic = 'SkiaBasic',
   SkiaMeatBall = 'SkiaMeatball',
   SkiaShader = 'SkiaShader',
+  SkiaColorPicker = 'SkiaColorPicker',
+  StreetLight = 'StreetLight',
+  Neumorphism = 'Neumorphism',
+  NeumorphismClock = 'NeumorphismClock',
 }
