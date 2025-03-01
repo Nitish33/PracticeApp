@@ -8,6 +8,7 @@ import CardFlip from './Examples/CardFilp/CardFlip';
 import ComparisonSlider from './Examples/ComparisonSlider/ComparisonSlider';
 import Cars from './Examples/Cars/Cars';
 import TitleMask from './TitleMask/TitleMask';
+import T3DCarousal from './Examples/T3DCarousal';
 
 export const ExamplesList: Array<OptionType> = [
   {
@@ -38,6 +39,12 @@ export const ExamplesList: Array<OptionType> = [
     key: ScreenName.CLTitleMask,
     label: 'Title mask',
     component: TitleMask,
+  },
+
+  {
+    key: ScreenName.T3DCarousal,
+    label: '3D carousal',
+    component: T3DCarousal,
   },
 ];
 

@@ -24,6 +24,7 @@ export enum ScreenName {
   CLSlider = 'CLSlider',
   CLCars = 'CLCars',
   CLTitleMask = 'CLTitleMask',
+  T3DCarousal = 'T3DCarousal',
 
   // SVG
   SVG = 'SVG',
@@ -42,4 +43,5 @@ export enum ScreenName {
   StreetLight = 'StreetLight',
   Neumorphism = 'Neumorphism',
   NeumorphismClock = 'NeumorphismClock',
+  RealisticClock = 'RealisticClock',
 }

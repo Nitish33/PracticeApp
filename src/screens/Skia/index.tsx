@@ -10,6 +10,7 @@ import ColorPicker from './Examples/ColorPicker/ColorPicker';
 import StreetLight from './Examples/StreetLight/StreetLight';
 import Neumorphism from './Examples/Neumorphism/Neumorphism';
 import OptionList from '../../Components/OptionList/OptionList';
+import RealisticClock from './Examples/RealisticClock/RealisticClock';
 
 export const ExampleList: Array<OptionType> = [
   {key: ScreenName.SkiaBasic, label: 'Skia Basics', component: SkiaBasic},
@@ -37,6 +38,12 @@ export const ExampleList: Array<OptionType> = [
     key: ScreenName.NeumorphismClock,
     label: 'NeumorphismClock',
     component: Clock,
+  },
+
+  {
+    key: ScreenName.RealisticClock,
+    label: 'Realistic Clock',
+    component: RealisticClock,
   },
 ];
 
