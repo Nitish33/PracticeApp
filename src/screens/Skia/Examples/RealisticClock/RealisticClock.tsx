@@ -245,52 +245,49 @@ function Hands() {
 }
 
 export default function RealisticClock() {
+  // return (
+  //   <Canvas style={{flex: 1}}>
+  //     <Group
+  //       color="lightblue"
+  //       layer={
+  //         <Paint>
+  //           <Blur blur={20} />
+  //           <ColorMatrix
+  //             matrix={[
+  //               1, 0, 0, 0, 0,
+  //               //@ts-ignore
+  //               0, 1, 0, 0, 0,
+  //               //@ts-ignore
+  //               0, 0, 1, 0, 0,
+  //               //@ts-ignore
+  //               0, 0, 0, 18, -15,
+  //             ]}
+  //           />
+  //         </Paint>
+  //       }>
+  //       <Circle cx={0} cy={128} r={128 * 0.95} />
+  //       <Circle cx={270} cy={128} r={128 * 0.95} />
+  //     </Group>
+  //   </Canvas>
+  // );
   return (
-    <Canvas style={{flex: 1}}>
-      <Group
-        color="lightblue"
-        layer={
-          <Paint>
-            <Blur blur={20} />
-            <ColorMatrix
-              matrix={[
-                1, 0, 0, 0, 0,
-                //@ts-ignore
-                0, 1, 0, 0, 0,
-                //@ts-ignore
-                0, 0, 1, 0, 0,
-                //@ts-ignore
-                0, 0, 0, 18, -15,
-              ]}
-            />
-          </Paint>
-        }>
-        <Circle cx={0} cy={128} r={128 * 0.95} />
-        <Circle cx={270} cy={128} r={128 * 0.95} />
-      </Group>
-    </Canvas>
+    <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+      <Canvas style={{width: CANVAS_SIZE, height: CANVAS_SIZE}}>
+        <FitBox
+          src={rect(0, 0, 295, 295)}
+          dst={rect(0, 0, CANVAS_SIZE, CANVAS_SIZE)}>
+          <RectBackground />
+          <ClockFace />
+          <Group>
+            <BottomLight />
+            <Lines />
+            {/* <TimerText /> */}
+            <Hands />
+          </Group>
+        </FitBox>
+      </Canvas>
+    </View>
   );
-  //   return (
-  //     <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-  //       <Canvas style={{width: CANVAS_SIZE, height: CANVAS_SIZE}}>
-  //         <FitBox
-  //           src={rect(0, 0, 295, 295)}
-  //           dst={rect(0, 0, CANVAS_SIZE, CANVAS_SIZE)}>
-  //           <RectBackground />
 
-  //           <ClockFace />
-
-  //           <Group>
-  //             <BottomLight />
-
-  //             <Lines />
-
-  //             <TimerText />
-
-  //             <Hands />
-  //           </Group>
-  //         </FitBox>
-  //       </Canvas>
-  //     </View>
-  //   );
+  return null;
 }

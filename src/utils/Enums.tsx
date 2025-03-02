@@ -44,4 +44,5 @@ export enum ScreenName {
   Neumorphism = 'Neumorphism',
   NeumorphismClock = 'NeumorphismClock',
   RealisticClock = 'RealisticClock',
+  RotatingCan = 'RotatingCan',
 }

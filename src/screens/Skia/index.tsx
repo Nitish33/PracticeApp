@@ -11,6 +11,7 @@ import StreetLight from './Examples/StreetLight/StreetLight';
 import Neumorphism from './Examples/Neumorphism/Neumorphism';
 import OptionList from '../../Components/OptionList/OptionList';
 import RealisticClock from './Examples/RealisticClock/RealisticClock';
+import RotatingCan from './Examples/RotatingCan';
 
 export const ExampleList: Array<OptionType> = [
   {key: ScreenName.SkiaBasic, label: 'Skia Basics', component: SkiaBasic},
@@ -44,6 +45,12 @@ export const ExampleList: Array<OptionType> = [
     key: ScreenName.RealisticClock,
     label: 'Realistic Clock',
     component: RealisticClock,
+  },
+
+  {
+    key: ScreenName.RotatingCan,
+    label: 'Rotating Can',
+    component: RotatingCan,
   },
 ];
 
